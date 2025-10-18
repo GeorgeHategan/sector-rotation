@@ -11,7 +11,7 @@ import sys
 
 def is_market_open():
     """
-    Check if US stock market is currently open
+    Check if US stock market is currently open or within 30 minutes after close
     Returns: (bool, str) - (is_open, reason)
     """
     # Get current time in US Eastern timezone
@@ -23,13 +23,17 @@ def is_market_open():
         return False, f"Market closed: Weekend ({now.strftime('%A')})"
     
     # Market hours: 9:30 AM - 4:00 PM EST
+    # Allow running up to 30 minutes after close to capture closing data
     market_open_time = now.replace(hour=9, minute=30, second=0, microsecond=0)
     market_close_time = now.replace(hour=16, minute=0, second=0, microsecond=0)
+    market_close_buffer = now.replace(hour=16, minute=30, second=0, microsecond=0)
     
     if now < market_open_time:
         return False, f"Market not open yet (opens at 9:30 AM EST, currently {now.strftime('%I:%M %p EST')})"
-    elif now > market_close_time:
+    elif now > market_close_buffer:
         return False, f"Market closed (closed at 4:00 PM EST, currently {now.strftime('%I:%M %p EST')})"
+    elif now > market_close_time:
+        return True, f"Market closed, capturing closing data (current time: {now.strftime('%I:%M %p EST')})"
     else:
         return True, f"Market is open (current time: {now.strftime('%I:%M %p EST')})"
 

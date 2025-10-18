@@ -2,8 +2,9 @@ name: Update Sector Rotation Data
 
 on:
   # Run every hour during market hours (9:30 AM - 4:00 PM EST, Mon-Fri)
+  # Plus one extra run at 4:30 PM to capture closing data
   schedule:
-    # 2:30 PM - 9:00 PM UTC = 9:30 AM - 4:00 PM EST
+    # 2:30 PM - 9:30 PM UTC = 9:30 AM - 4:30 PM EST
     - cron: '30 14 * * 1-5'  # 9:30 AM EST
     - cron: '30 15 * * 1-5'  # 10:30 AM EST
     - cron: '30 16 * * 1-5'  # 11:30 AM EST
@@ -11,6 +12,7 @@ on:
     - cron: '30 18 * * 1-5'  # 1:30 PM EST
     - cron: '30 19 * * 1-5'  # 2:30 PM EST
     - cron: '30 20 * * 1-5'  # 3:30 PM EST
+    - cron: '30 21 * * 1-5'  # 4:30 PM EST (closing data)
   
   # Allow manual trigger
   workflow_dispatch:
