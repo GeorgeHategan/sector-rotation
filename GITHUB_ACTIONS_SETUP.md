@@ -16,10 +16,17 @@ You need to add your Alpha Vantage API key as a GitHub secret:
 2. Click on **Settings** (top menu)
 3. In the left sidebar, click **Secrets and variables** → **Actions**
 4. Click **New repository secret**
-5. Add the following secret:
+5. Add the following secrets:
+   
+   **Required:**
    - Name: `ALPHAVANTAGE_API_KEY`
    - Value: Your Alpha Vantage API key (e.g., `75IGYUZ3C7AC2PBM`)
-6. Click **Add secret**
+   
+   **Optional (for AI analysis):**
+   - Name: `OPENAI_API_KEY`
+   - Value: Your OpenAI API key (e.g., `sk-proj-...`)
+   
+6. Click **Add secret** for each one
 
 ### 2. Enable GitHub Actions
 
@@ -49,10 +56,11 @@ The GitHub Action runs automatically:
 
 1. ✅ Checks if the US stock market is currently open
 2. 📊 If open, runs `sector_rotation_scanner.py`
-3. 📈 Generates charts and heatmaps
-4. 📝 Updates `docs/latest_data.json` with new data
-5. 🚀 Commits and pushes changes to GitHub
-6. 🌐 GitHub Pages automatically publishes the updated dashboard
+3. 🤖 Runs `ai_market_analysis.py` (if OPENAI_API_KEY is set)
+4. 📈 Generates charts and heatmaps
+5. 📝 Updates `docs/latest_data.json` with new data and AI analysis
+6. 🚀 Commits and pushes changes to GitHub
+7. 🌐 GitHub Pages automatically publishes the updated dashboard
 
 ### Manual Trigger
 
@@ -102,6 +110,14 @@ The workflow automatically detects:
 - GitHub Actions: **Free** for public repositories (2,000 minutes/month)
 - GitHub Pages: **Free** for public repositories
 - Alpha Vantage API: **Free tier** available (25 requests/day)
+- OpenAI API: **~$0.02-0.05 per analysis** (optional, only if OPENAI_API_KEY is configured)
+
+### Cost Estimates
+
+If running every hour during market hours (7 times per day):
+- Alpha Vantage: 7 requests/day (well within free tier)
+- OpenAI (optional): ~$0.14-0.35 per day (~$3-8 per month)
+- GitHub Actions: ~5 minutes/day (well within free tier)
 
 ## Customization
 

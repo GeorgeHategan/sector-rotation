@@ -41,6 +41,14 @@ jobs:
         python3 run_during_market_hours.py
       continue-on-error: false
     
+    - name: Run AI market analysis
+      if: success()
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        python3 ai_market_analysis.py
+      continue-on-error: true
+    
     - name: Update GitHub Pages data
       if: success()
       run: |
