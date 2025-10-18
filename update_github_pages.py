@@ -20,6 +20,7 @@ def update_github_pages():
     json_files = sorted(glob.glob('sector_rotation_*.json'), key=os.path.getmtime, reverse=True)
     chart_files = sorted(glob.glob('sector_rotation_chart_*.png'), key=os.path.getmtime, reverse=True)
     heatmap_files = sorted(glob.glob('sector_heatmap_*.png'), key=os.path.getmtime, reverse=True)
+    ai_analysis_files = sorted(glob.glob('ai_market_analysis_*.json'), key=os.path.getmtime, reverse=True)
     
     if not json_files:
         print("❌ No sector rotation data found. Run sector_rotation_scanner.py first.")
@@ -28,6 +29,7 @@ def update_github_pages():
     latest_json = json_files[0]
     latest_chart = chart_files[0] if chart_files else None
     latest_heatmap = heatmap_files[0] if heatmap_files else None
+    latest_ai_analysis = ai_analysis_files[0] if ai_analysis_files else None
     
     print(f"📊 Found latest data: {latest_json}")
     
@@ -35,12 +37,21 @@ def update_github_pages():
     with open(latest_json, 'r') as f:
         sector_data = json.load(f)
     
+    # Load AI analysis if available
+    ai_analysis_text = None
+    if latest_ai_analysis:
+        print(f"🤖 Found AI analysis: {latest_ai_analysis}")
+        with open(latest_ai_analysis, 'r') as f:
+            ai_data = json.load(f)
+            ai_analysis_text = ai_data.get('ai_analysis', '')
+    
     # Create the latest_data.json for GitHub Pages
     page_data = {
         'timestamp': datetime.now().isoformat(),
         'sectors': sector_data,
         'chart_file': os.path.basename(latest_chart) if latest_chart else '',
-        'heatmap_file': os.path.basename(latest_heatmap) if latest_heatmap else ''
+        'heatmap_file': os.path.basename(latest_heatmap) if latest_heatmap else '',
+        'ai_analysis': ai_analysis_text
     }
     
     # Save to docs folder
@@ -57,6 +68,9 @@ def update_github_pages():
     if latest_heatmap:
         shutil.copy(latest_heatmap, f'docs/{os.path.basename(latest_heatmap)}')
         print(f"✅ Copied {latest_heatmap} to docs/")
+    
+    if latest_ai_analysis:
+        print(f"✅ Included AI analysis in latest_data.json")
     
     print("\n" + "=" * 80)
     print("🎉 GitHub Pages data updated successfully!")

@@ -225,8 +225,15 @@
         </div>
         
         <div class="chart-container">
-            <h2>� Sector Performance Heatmap</h2>
+            <h2>🔥 Sector Performance Heatmap</h2>
             <img id="heatmapImage" src="" alt="Sector Heatmap">
+        </div>
+        
+        <div class="card" id="aiAnalysisCard" style="display: none;">
+            <h2>🤖 AI Market Analysis</h2>
+            <div id="aiAnalysis" style="white-space: pre-wrap; line-height: 1.8; color: #333;">
+                Loading AI analysis...
+            </div>
         </div>
         
         <div class="card">
@@ -330,6 +337,14 @@
                 // Update images
                 document.getElementById('heatmapImage').src = data.heatmap_file;
                 document.getElementById('chartImage').src = data.chart_file;
+                
+                // Update AI analysis if available
+                if (data.ai_analysis) {
+                    document.getElementById('aiAnalysisCard').style.display = 'block';
+                    document.getElementById('aiAnalysis').textContent = data.ai_analysis;
+                } else {
+                    document.getElementById('aiAnalysisCard').style.display = 'none';
+                }
                 
             } catch (error) {
                 console.error('Error loading data:', error);
