@@ -171,30 +171,37 @@ def create_sector_heatmap(df, filename='sector_heatmap.png'):
     """Create a heatmap visualization of sector performance across multiple timeframes"""
     import numpy as np
     
+    # Set dark theme
+    plt.style.use('dark_background')
+    
     # Prepare data for heatmap
     sectors = df['Sector'].tolist()
     
     # Create a matrix with different metrics
     data_matrix = df[['1D_Change_%', '5D_Change_%', '20D_Change_%', 'Momentum_Score', 'RS_vs_SMA20_%']].values
     
-    # Create figure
-    fig, ax = plt.subplots(figsize=(12, 10))
+    # Create figure with dark background
+    fig, ax = plt.subplots(figsize=(12, 10), facecolor='#1a1a2e')
+    ax.set_facecolor('#1a1a2e')
     
     # Create heatmap
     im = ax.imshow(data_matrix, cmap='RdYlGn', aspect='auto', vmin=-5, vmax=5)
     
-    # Set ticks and labels
+    # Set ticks and labels with light colors
     ax.set_xticks(np.arange(5))
     ax.set_yticks(np.arange(len(sectors)))
-    ax.set_xticklabels(['1D Change %', '5D Change %', '20D Change %', 'Momentum', 'RS vs SMA20%'], fontsize=10)
-    ax.set_yticklabels(sectors, fontsize=10)
+    ax.set_xticklabels(['1D Change %', '5D Change %', '20D Change %', 'Momentum', 'RS vs SMA20%'], 
+                       fontsize=10, color='#e0e0e0')
+    ax.set_yticklabels(sectors, fontsize=10, color='#e0e0e0')
     
     # Rotate the tick labels for better readability
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     
     # Add colorbar
     cbar = plt.colorbar(im, ax=ax)
-    cbar.set_label('Performance (%)', rotation=270, labelpad=20, fontsize=10)
+    cbar.set_label('Performance (%)', rotation=270, labelpad=20, fontsize=10, color='#e0e0e0')
+    cbar.ax.yaxis.set_tick_params(color='#e0e0e0')
+    plt.setp(plt.getp(cbar.ax.axes, 'yticklabels'), color='#e0e0e0')
     
     # Add values in cells
     for i in range(len(sectors)):
@@ -204,15 +211,16 @@ def create_sector_heatmap(df, filename='sector_heatmap.png'):
             text = ax.text(j, i, f'{value:.1f}', ha="center", va="center", 
                           color=color, fontsize=8, fontweight='bold')
     
-    # Add title
-    ax.set_title('Sector Performance Heatmap', fontsize=16, fontweight='bold', pad=20)
+    # Add title with light color
+    ax.set_title('Sector Performance Heatmap', fontsize=16, fontweight='bold', 
+                 pad=20, color='#60a5fa')
     
-    # Add timestamp
+    # Add timestamp with light color
     fig.text(0.99, 0.01, f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC", 
-             ha='right', fontsize=8, style='italic', alpha=0.7)
+             ha='right', fontsize=8, style='italic', alpha=0.7, color='#9ca3af')
     
     plt.tight_layout()
-    plt.savefig(filename, dpi=150, bbox_inches='tight')
+    plt.savefig(filename, dpi=150, bbox_inches='tight', facecolor='#1a1a2e')
     plt.close()
     
     print(f"\n🔥 Heatmap saved to: {filename}")
@@ -222,48 +230,57 @@ def create_sector_heatmap(df, filename='sector_heatmap.png'):
 def create_sector_chart(df, filename='sector_rotation_chart.png'):
     """Create a visual chart of sector performance"""
     
-    # Create figure with 2 subplots
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 10))
+    # Set dark theme
+    plt.style.use('dark_background')
+    
+    # Create figure with 2 subplots and dark background
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 10), facecolor='#1a1a2e')
+    ax1.set_facecolor('#1a1a2e')
+    ax2.set_facecolor('#1a1a2e')
     
     # Sort by momentum score
     df_sorted = df.sort_values('Momentum_Score', ascending=True)
     
     # Chart 1: Momentum Score Bar Chart
-    colors = ['darkred' if x < -1 else 'red' if x < 0 else 'lightgreen' if x < 1 else 'darkgreen' 
+    colors = ['#dc2626' if x < -1 else '#ef4444' if x < 0 else '#4ade80' if x < 1 else '#22c55e' 
               for x in df_sorted['Momentum_Score']]
     
     ax1.barh(df_sorted['Sector'], df_sorted['Momentum_Score'], color=colors, alpha=0.8)
-    ax1.axvline(x=0, color='black', linestyle='-', linewidth=0.8)
-    ax1.set_xlabel('Momentum Score', fontsize=12, fontweight='bold')
-    ax1.set_title('Sector Rotation Analysis - Momentum Scores', fontsize=14, fontweight='bold', pad=20)
-    ax1.grid(axis='x', alpha=0.3)
+    ax1.axvline(x=0, color='#9ca3af', linestyle='-', linewidth=0.8)
+    ax1.set_xlabel('Momentum Score', fontsize=12, fontweight='bold', color='#e0e0e0')
+    ax1.set_title('Sector Rotation Analysis - Momentum Scores', fontsize=14, 
+                  fontweight='bold', pad=20, color='#60a5fa')
+    ax1.grid(axis='x', alpha=0.2, color='#4b5563')
+    ax1.tick_params(colors='#e0e0e0')
     
     # Add value labels on bars
     for i, (idx, row) in enumerate(df_sorted.iterrows()):
         ax1.text(row['Momentum_Score'], i, f" {row['Momentum_Score']:+.2f}", 
-                va='center', fontsize=9, fontweight='bold')
+                va='center', fontsize=9, fontweight='bold', color='#e0e0e0')
     
     # Chart 2: 5-Day Performance
-    colors2 = ['darkred' if x < -2 else 'red' if x < 0 else 'lightgreen' if x < 2 else 'darkgreen' 
+    colors2 = ['#dc2626' if x < -2 else '#ef4444' if x < 0 else '#4ade80' if x < 2 else '#22c55e' 
                for x in df_sorted['5D_Change_%']]
     
     ax2.barh(df_sorted['Sector'], df_sorted['5D_Change_%'], color=colors2, alpha=0.8)
-    ax2.axvline(x=0, color='black', linestyle='-', linewidth=0.8)
-    ax2.set_xlabel('5-Day Change (%)', fontsize=12, fontweight='bold')
-    ax2.set_title('5-Day Price Performance by Sector', fontsize=14, fontweight='bold', pad=20)
-    ax2.grid(axis='x', alpha=0.3)
+    ax2.axvline(x=0, color='#9ca3af', linestyle='-', linewidth=0.8)
+    ax2.set_xlabel('5-Day Change (%)', fontsize=12, fontweight='bold', color='#e0e0e0')
+    ax2.set_title('5-Day Price Performance by Sector', fontsize=14, 
+                  fontweight='bold', pad=20, color='#60a5fa')
+    ax2.grid(axis='x', alpha=0.2, color='#4b5563')
+    ax2.tick_params(colors='#e0e0e0')
     
     # Add value labels on bars
     for i, (idx, row) in enumerate(df_sorted.iterrows()):
         ax2.text(row['5D_Change_%'], i, f" {row['5D_Change_%']:+.2f}%", 
-                va='center', fontsize=9, fontweight='bold')
+                va='center', fontsize=9, fontweight='bold', color='#e0e0e0')
     
-    # Add timestamp and source
+    # Add timestamp and source with light color
     fig.text(0.99, 0.01, f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC", 
-             ha='right', fontsize=8, style='italic', alpha=0.7)
+             ha='right', fontsize=8, style='italic', alpha=0.7, color='#9ca3af')
     
     plt.tight_layout()
-    plt.savefig(filename, dpi=150, bbox_inches='tight')
+    plt.savefig(filename, dpi=150, bbox_inches='tight', facecolor='#1a1a2e')
     plt.close()
     
     print(f"\n📊 Chart saved to: {filename}")
