@@ -1,0 +1,2 @@
+ticker,date,close,prev_high,breakout_pct,volume,avg_volume,volume_ratio,quality_score,sma_10,sma_20,news_sentiment,news_count,has_news
+KO,2025-10-17,68.44,68.1,0.49,15541769,15122650,1.03,65,66.98,66.64,0.187,5,True
