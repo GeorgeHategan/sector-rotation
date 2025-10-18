@@ -1,5 +1,12 @@
 # Sector Rotation Scanner
 
+## 🌐 Live Dashboard
+
+View real-time sector rotation analysis at:
+**[https://georgehategan.github.io/sector-rotation/](https://georgehategan.github.io/sector-rotation/)**
+
+---
+
 ## Overview
 
 This directory contains scanners that analyze sector rotation and identify money flow between market sectors.
@@ -10,11 +17,12 @@ This directory contains scanners that analyze sector rotation and identify money
 **Purpose:** Identifies money flow between market sectors
 
 **Features:**
-- Analyzes 11 major market sectors using ETFs
+- Analyzes 13 major market sectors using ETFs (including IBB and KRE)
 - Identifies money flow patterns
 - Determines market sentiment (Risk-On vs Risk-Off)
 - Tracks defensive vs cyclical sector performance
 - Shows which sectors are strongest/weakest
+- Generates interactive heatmap visualizations
 
 **Sectors Analyzed:**
 - XLK (Technology)
@@ -28,11 +36,18 @@ This directory contains scanners that analyze sector rotation and identify money
 - XLU (Utilities)
 - XLRE (Real Estate)
 - XLC (Communications)
+- KRE (Regional Banking)
+- IBB (Biotechnology)
 
 **Usage:**
 ```bash
 python sector_rotation_scanner.py
 ```
+
+**Outputs:**
+- CSV and JSON data files
+- Momentum bar charts
+- Performance heatmap
 
 ---
 
@@ -111,9 +126,50 @@ This will:
 ## Quick Start
 
 1. Run sector analysis: `python sector_rotation_scanner.py`
-2. Identify strongest sectors from results
-3. Run smart scanner: `python smart_sector_breakout_scanner.py`
-4. Review results in `results/` directory
+2. Update GitHub Pages: `python update_github_pages.py`
+3. Identify strongest sectors from results
+4. Run smart scanner: `python smart_sector_breakout_scanner.py`
+5. Review results in output files
+
+## Publishing to GitHub Pages
+
+After running the scanner, publish your results online:
+
+```bash
+# 1. Run the scanner
+python sector_rotation_scanner.py
+
+# 2. Update GitHub Pages data
+python update_github_pages.py
+
+# 3. Commit and push
+git add docs/
+git commit -m "Update sector rotation data"
+git push
+```
+
+Your live dashboard will be available at: `https://georgehategan.github.io/sector-rotation/`
+
+### First-Time Setup for GitHub Pages
+
+1. Go to your repository on GitHub
+2. Click **Settings** > **Pages**
+3. Under "Source", select:
+   - Branch: `main`
+   - Folder: `/docs`
+4. Click **Save**
+5. Wait a few minutes for deployment
+
+## Security
+
+⚠️ **API Key Protection**: This repository uses environment variables to protect your Alpha Vantage API key.
+
+1. Create a `.env` file in the project root:
+   ```
+   ALPHAVANTAGE_API_KEY=your_api_key_here
+   ```
+2. The `.env` file is automatically ignored by git (listed in `.gitignore`)
+3. Never commit your API key to the repository
 
 ## Requirements
 

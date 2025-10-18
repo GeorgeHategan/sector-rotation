@@ -13,9 +13,15 @@ import pandas as pd
 from datetime import datetime, timedelta
 import json
 import time
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+# override=True ensures .env file takes precedence over existing environment variables
+load_dotenv(override=True)
 
 # Alpha Vantage API Configuration
-API_KEY = '75IGYUZ3C7AC2PBM'
+API_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
 BASE_URL = 'https://www.alphavantage.co/query'
 
 # Major Sector ETFs and their top holdings

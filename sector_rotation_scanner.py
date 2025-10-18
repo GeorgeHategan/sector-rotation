@@ -13,10 +13,19 @@ import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+# override=True ensures .env file takes precedence over existing environment variables
+load_dotenv(override=True)
 
 # Alpha Vantage API Configuration
-# NOTE: This is a PREMIUM API key - higher rate limits than free tier
-API_KEY = '75IGYUZ3C7AC2PBM'
+API_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
+
+if not API_KEY:
+    print("ERROR: ALPHAVANTAGE_API_KEY not found in environment variables!")
+    print("Please check your .env file.")
+    exit(1)
 BASE_URL = 'https://www.alphavantage.co/query'
 
 # Major Sector ETFs (SPDR Sector Select ETFs)
@@ -33,6 +42,7 @@ SECTOR_ETFS = {
     'XLU': 'Utilities',
     'XLC': 'Communication Services',
     'KRE': 'Regional Banking'
+    , 'IBB': 'Biotechnology'
 }
 
 def get_intraday_data(ticker):
@@ -82,6 +92,7 @@ def get_daily_data(ticker, outputsize='compact'):
         data = response.json()
         
         if 'Time Series (Daily)' not in data:
+            print(f"DEBUG - API Response for {ticker}: {data}")
             return None
         
         time_series = data['Time Series (Daily)']
@@ -154,6 +165,58 @@ def analyze_sector_strength(ticker, sector_name):
         'Trend': trend,
         'Current_Price': round(current_price, 2)
     }
+
+
+def create_sector_heatmap(df, filename='sector_heatmap.png'):
+    """Create a heatmap visualization of sector performance across multiple timeframes"""
+    import numpy as np
+    
+    # Prepare data for heatmap
+    sectors = df['Sector'].tolist()
+    
+    # Create a matrix with different metrics
+    data_matrix = df[['1D_Change_%', '5D_Change_%', '20D_Change_%', 'Momentum_Score', 'RS_vs_SMA20_%']].values
+    
+    # Create figure
+    fig, ax = plt.subplots(figsize=(12, 10))
+    
+    # Create heatmap
+    im = ax.imshow(data_matrix, cmap='RdYlGn', aspect='auto', vmin=-5, vmax=5)
+    
+    # Set ticks and labels
+    ax.set_xticks(np.arange(5))
+    ax.set_yticks(np.arange(len(sectors)))
+    ax.set_xticklabels(['1D Change %', '5D Change %', '20D Change %', 'Momentum', 'RS vs SMA20%'], fontsize=10)
+    ax.set_yticklabels(sectors, fontsize=10)
+    
+    # Rotate the tick labels for better readability
+    plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+    
+    # Add colorbar
+    cbar = plt.colorbar(im, ax=ax)
+    cbar.set_label('Performance (%)', rotation=270, labelpad=20, fontsize=10)
+    
+    # Add values in cells
+    for i in range(len(sectors)):
+        for j in range(5):
+            value = data_matrix[i, j]
+            color = 'white' if abs(value) > 3 else 'black'
+            text = ax.text(j, i, f'{value:.1f}', ha="center", va="center", 
+                          color=color, fontsize=8, fontweight='bold')
+    
+    # Add title
+    ax.set_title('Sector Performance Heatmap', fontsize=16, fontweight='bold', pad=20)
+    
+    # Add timestamp
+    fig.text(0.99, 0.01, f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC", 
+             ha='right', fontsize=8, style='italic', alpha=0.7)
+    
+    plt.tight_layout()
+    plt.savefig(filename, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    print(f"\n🔥 Heatmap saved to: {filename}")
+    return filename
 
 
 def create_sector_chart(df, filename='sector_rotation_chart.png'):
@@ -324,10 +387,13 @@ def main():
     # Identify rotation patterns
     identify_rotation(df)
     
-    # Generate chart
+    # Generate visualizations
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     chart_file = f"sector_rotation_chart_{timestamp}.png"
+    heatmap_file = f"sector_heatmap_{timestamp}.png"
+    
     create_sector_chart(df, chart_file)
+    create_sector_heatmap(df, heatmap_file)
     
     # Save results
     csv_file = f"sector_rotation_{timestamp}.csv"
@@ -341,6 +407,7 @@ def main():
     print(f"   - {csv_file}")
     print(f"   - {json_file}")
     print(f"   - {chart_file}")
+    print(f"   - {heatmap_file}")
     print("=" * 80)
 
 

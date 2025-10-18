@@ -25,13 +25,18 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import base64
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+# override=True ensures .env file takes precedence over existing environment variables
+load_dotenv(override=True)
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
 # Alpha Vantage API
-API_KEY = '75IGYUZ3C7AC2PBM'
+API_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
 BASE_URL = 'https://www.alphavantage.co/query'
 
 # ClickUp Configuration
