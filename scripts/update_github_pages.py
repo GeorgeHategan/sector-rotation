@@ -17,10 +17,10 @@ def update_github_pages():
     os.makedirs('docs', exist_ok=True)
     
     # Find the most recent files
-    json_files = sorted(glob.glob('sector_rotation_*.json'), key=os.path.getmtime, reverse=True)
-    chart_files = sorted(glob.glob('sector_rotation_chart_*.png'), key=os.path.getmtime, reverse=True)
-    heatmap_files = sorted(glob.glob('sector_heatmap_*.png'), key=os.path.getmtime, reverse=True)
-    ai_analysis_files = sorted(glob.glob('ai_market_analysis_*.json'), key=os.path.getmtime, reverse=True)
+    json_files = sorted(glob.glob('data/historical/sector_rotation_*.json'), key=os.path.getmtime, reverse=True)
+    chart_files = sorted(glob.glob('output/charts/sector_rotation_chart_*.png'), key=os.path.getmtime, reverse=True)
+    heatmap_files = sorted(glob.glob('output/heatmaps/sector_heatmap_*.png'), key=os.path.getmtime, reverse=True)
+    ai_analysis_files = sorted(glob.glob('output/reports/ai_market_analysis_*.json'), key=os.path.getmtime, reverse=True)
     
     if not json_files:
         print("❌ No sector rotation data found. Run sector_rotation_scanner.py first.")

@@ -16,7 +16,7 @@ load_dotenv(override=True)
 
 def get_latest_sector_data():
     """Load the most recent sector rotation data"""
-    json_files = sorted(glob.glob('sector_rotation_*.json'), key=os.path.getmtime, reverse=True)
+    json_files = sorted(glob.glob('data/historical/sector_rotation_*.json'), key=os.path.getmtime, reverse=True)
     
     if not json_files:
         print("❌ No sector rotation data found. Run sector_rotation_scanner.py first.")
@@ -129,12 +129,12 @@ def save_analysis(analysis, sector_data):
     }
     
     # Save as JSON
-    json_file = f"ai_market_analysis_{timestamp}.json"
+    json_file = f"output/reports/ai_market_analysis_{timestamp}.json"
     with open(json_file, 'w') as f:
         json.dump(report, f, indent=2)
     
     # Save as readable text
-    txt_file = f"ai_market_analysis_{timestamp}.txt"
+    txt_file = f"output/reports/ai_market_analysis_{timestamp}.txt"
     with open(txt_file, 'w') as f:
         f.write("=" * 80 + "\n")
         f.write("AI MARKET ANALYSIS REPORT\n")

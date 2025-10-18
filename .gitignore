@@ -1,2 +1,17 @@
 # Ignore environment variable files
 .env
+
+# Ignore historical data files (keep latest only)
+data/historical/*.csv
+data/historical/*.json
+output/charts/*.png
+output/heatmaps/*.png
+output/reports/*.json
+output/reports/*.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python

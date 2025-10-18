@@ -46,7 +46,7 @@ def run_scanner():
     
     try:
         # Run the scanner
-        result = subprocess.run(['python3', 'sector_rotation_scanner.py'], 
+        result = subprocess.run(['python3', 'scripts/sector_rotation_scanner.py'], 
                               capture_output=False, 
                               text=True)
         

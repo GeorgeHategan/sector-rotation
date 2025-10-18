@@ -406,15 +406,15 @@ def main():
     
     # Generate visualizations
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    chart_file = f"sector_rotation_chart_{timestamp}.png"
-    heatmap_file = f"sector_heatmap_{timestamp}.png"
+    chart_file = f"output/charts/sector_rotation_chart_{timestamp}.png"
+    heatmap_file = f"output/heatmaps/sector_heatmap_{timestamp}.png"
     
     create_sector_chart(df, chart_file)
     create_sector_heatmap(df, heatmap_file)
     
     # Save results
-    csv_file = f"sector_rotation_{timestamp}.csv"
-    json_file = f"sector_rotation_{timestamp}.json"
+    csv_file = f"data/historical/sector_rotation_{timestamp}.csv"
+    json_file = f"data/historical/sector_rotation_{timestamp}.json"
     
     df.to_csv(csv_file, index=False)
     df.to_json(json_file, orient='records', indent=2)
