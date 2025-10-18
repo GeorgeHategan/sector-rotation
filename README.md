@@ -8,7 +8,7 @@ View real-time sector rotation analysis at:
 ### 🤖 Automatic Updates
 
 This dashboard updates automatically during market hours via GitHub Actions:
-- Updates every 30 minutes during market hours (9:30 AM - 4:00 PM EST)
+- Updates every hour during market hours (9:30 AM - 4:00 PM EST)
 - Monday through Friday only
 - No manual intervention required
 
@@ -58,7 +58,36 @@ python sector_rotation_scanner.py
 
 ---
 
-### 2. **smart_sector_breakout_scanner.py** - Smart Sector Breakout Scanner
+### 2. **ai_market_analysis.py** - 🤖 AI Market Analysis (NEW!)
+**Purpose:** Expert AI analysis of sector rotation patterns using OpenAI GPT-4
+
+**Features:**
+- Determines if we're in a bull or bear market
+- Assesses Risk-On vs Risk-Off environment
+- Analyzes cyclical vs defensive sector performance
+- Provides actionable trading insights
+- Short and medium-term market outlook
+- Identifies key risk factors
+
+**Usage:**
+```bash
+# Run after sector scan
+python sector_rotation_scanner.py
+python ai_market_analysis.py
+```
+
+**What You Get:**
+- Market phase assessment (bull/bear/transitional)
+- Risk environment analysis
+- 3-5 actionable insights
+- Short-term and medium-term outlook
+- Key risks to monitor
+
+📖 **Detailed Guide**: See [AI_ANALYSIS_GUIDE.md](AI_ANALYSIS_GUIDE.md)
+
+---
+
+### 3. **smart_sector_breakout_scanner.py** - Smart Sector Breakout Scanner
 **Purpose:** Combines sector rotation analysis with breakout detection
 
 **Features:**
@@ -178,7 +207,7 @@ Set up automated updates during market hours:
 
 📖 **Detailed Setup Guide**: See [GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md)
 
-The dashboard will automatically update every 30 minutes during market hours (9:30 AM - 4:00 PM EST, Mon-Fri).
+The dashboard will automatically update every hour during market hours (9:30 AM - 4:00 PM EST, Mon-Fri).
 
 ### First-Time Setup for GitHub Pages
 
@@ -192,14 +221,24 @@ The dashboard will automatically update every 30 minutes during market hours (9:
 
 ## Security
 
-⚠️ **API Key Protection**: This repository uses environment variables to protect your Alpha Vantage API key.
+⚠️ **API Key Protection**: This repository uses environment variables to protect your API keys.
 
 1. Create a `.env` file in the project root:
    ```
-   ALPHAVANTAGE_API_KEY=your_api_key_here
+   ALPHAVANTAGE_API_KEY=your_alphavantage_api_key_here
+   OPENAI_API_KEY=your_openai_api_key_here
    ```
 2. The `.env` file is automatically ignored by git (listed in `.gitignore`)
-3. Never commit your API key to the repository
+3. Never commit your API keys to the repository
+
+### Optional: AI Market Analysis
+
+To enable AI-powered market analysis with OpenAI:
+1. Get an API key from https://platform.openai.com/api-keys
+2. Add `OPENAI_API_KEY` to your `.env` file
+3. Run: `python ai_market_analysis.py`
+
+The AI will analyze sector rotation patterns and provide expert insights on market conditions.
 
 ## Requirements
 

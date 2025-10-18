@@ -4,6 +4,8 @@
 
 This repository uses GitHub Actions to automatically update sector rotation data during market hours (Monday-Friday, 9:30 AM - 4:00 PM EST).
 
+The workflow runs **every hour** during market hours to conserve API calls while keeping data fresh.
+
 ## Setup Instructions
 
 ### 1. Add API Key as GitHub Secret
@@ -39,7 +41,7 @@ You need to add your Alpha Vantage API key as a GitHub secret:
 ### Automatic Updates
 
 The GitHub Action runs automatically:
-- **Every 30 minutes** during market hours (9:30 AM - 4:00 PM EST)
+- **Every hour** during market hours (9:30 AM - 4:00 PM EST)
 - **Monday through Friday only**
 - Skips weekends and after-hours automatically
 
