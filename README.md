@@ -5,6 +5,13 @@
 View real-time sector rotation analysis at:
 **[https://georgehategan.github.io/sector-rotation/](https://georgehategan.github.io/sector-rotation/)**
 
+### 🤖 Automatic Updates
+
+This dashboard updates automatically during market hours via GitHub Actions:
+- Updates every 30 minutes during market hours (9:30 AM - 4:00 PM EST)
+- Monday through Friday only
+- No manual intervention required
+
 ---
 
 ## Overview
@@ -133,6 +140,8 @@ This will:
 
 ## Publishing to GitHub Pages
 
+### Manual Updates
+
 After running the scanner, publish your results online:
 
 ```bash
@@ -149,6 +158,27 @@ git push
 ```
 
 Your live dashboard will be available at: `https://georgehategan.github.io/sector-rotation/`
+
+### Automatic Updates with GitHub Actions
+
+Set up automated updates during market hours:
+
+1. **Add API Key as GitHub Secret**:
+   - Go to repository **Settings** → **Secrets and variables** → **Actions**
+   - Add secret: `ALPHAVANTAGE_API_KEY` = your API key
+   
+2. **Enable GitHub Actions**:
+   - The workflow file is already included (`.github/workflows/update-sector-data.yml`)
+   - GitHub Actions will run automatically during market hours
+   
+3. **Enable GitHub Pages** (one-time setup):
+   - Go to **Settings** → **Pages**
+   - Source: Branch `main`, Folder `/docs`
+   - Click **Save**
+
+📖 **Detailed Setup Guide**: See [GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md)
+
+The dashboard will automatically update every 30 minutes during market hours (9:30 AM - 4:00 PM EST, Mon-Fri).
 
 ### First-Time Setup for GitHub Pages
 

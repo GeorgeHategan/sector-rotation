@@ -1,0 +1,18 @@
+[
+  {
+    "ticker":"KO",
+    "date":"2025-10-17",
+    "close":68.44,
+    "prev_high":68.1,
+    "breakout_pct":0.49,
+    "volume":15541769,
+    "avg_volume":15122650,
+    "volume_ratio":1.03,
+    "quality_score":65,
+    "sma_10":66.98,
+    "sma_20":66.64,
+    "news_sentiment":0.187,
+    "news_count":5,
+    "has_news":true
+  }
+]
