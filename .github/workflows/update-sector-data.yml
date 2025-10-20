@@ -1,18 +1,19 @@
 name: Update Sector Rotation Data
 
 on:
-  # Run every hour during market hours (9:30 AM - 4:00 PM EST, Mon-Fri)
-  # Plus one extra run at 4:30 PM to capture closing data
+  # Run every hour during US market hours (9:30 AM - 4:00 PM EST, Mon-Fri)
+  # Times shown in CET (Copenhagen time): 3:30 PM - 10:30 PM CET
   schedule:
-    # 2:30 PM - 9:30 PM UTC = 9:30 AM - 4:30 PM EST
-    - cron: '30 14 * * 1-5'  # 9:30 AM EST
-    - cron: '30 15 * * 1-5'  # 10:30 AM EST
-    - cron: '30 16 * * 1-5'  # 11:30 AM EST
-    - cron: '30 17 * * 1-5'  # 12:30 PM EST
-    - cron: '30 18 * * 1-5'  # 1:30 PM EST
-    - cron: '30 19 * * 1-5'  # 2:30 PM EST
-    - cron: '30 20 * * 1-5'  # 3:30 PM EST
-    - cron: '30 21 * * 1-5'  # 4:30 PM EST (closing data)
+    # GitHub Actions uses UTC (CET - 1 hour in winter, CET - 2 hours in summer)
+    # These times are UTC, which equals CET - 1 hour (winter) or CET - 2 hours (summer DST)
+    - cron: '30 14 * * 1-5'  # 3:30 PM CET = 9:30 AM EST (Market Open)
+    - cron: '30 15 * * 1-5'  # 4:30 PM CET = 10:30 AM EST
+    - cron: '30 16 * * 1-5'  # 5:30 PM CET = 11:30 AM EST
+    - cron: '30 17 * * 1-5'  # 6:30 PM CET = 12:30 PM EST
+    - cron: '30 18 * * 1-5'  # 7:30 PM CET = 1:30 PM EST
+    - cron: '30 19 * * 1-5'  # 8:30 PM CET = 2:30 PM EST
+    - cron: '30 20 * * 1-5'  # 9:30 PM CET = 3:30 PM EST
+    - cron: '30 21 * * 1-5'  # 10:30 PM CET = 4:30 PM EST (Market Close)
   
   # Allow manual trigger
   workflow_dispatch:
