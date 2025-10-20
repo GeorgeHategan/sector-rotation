@@ -346,9 +346,20 @@
                 const response = await fetch('latest_data.json');
                 const data = await response.json();
                 
-                // Update last updated time
+                // Update last updated time (CET timezone)
+                const date = new Date(data.timestamp);
+                const cetTime = date.toLocaleString('en-US', { 
+                    timeZone: 'Europe/Copenhagen',
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                });
                 document.getElementById('lastUpdated').textContent = 
-                    `Last updated: ${new Date(data.timestamp).toLocaleString()}`;
+                    `Last updated: ${cetTime} CET`;
                 
                 // Update strongest sectors
                 const strongestHTML = data.sectors
