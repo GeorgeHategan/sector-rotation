@@ -129,6 +129,7 @@ def save_analysis(analysis, sector_data):
     }
     
     # Save as JSON
+    os.makedirs('output/reports', exist_ok=True)
     json_file = f"output/reports/ai_market_analysis_{timestamp}.json"
     with open(json_file, 'w') as f:
         json.dump(report, f, indent=2)
