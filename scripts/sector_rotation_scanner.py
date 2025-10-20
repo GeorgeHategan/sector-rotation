@@ -56,7 +56,7 @@ def get_intraday_data(ticker):
     }
     
     try:
-        response = requests.get(BASE_URL, params=params)
+        response = requests.get(BASE_URL, params=params, timeout=30)
         data = response.json()
         
         if 'Time Series (5min)' not in data:
@@ -88,7 +88,7 @@ def get_daily_data(ticker, outputsize='compact'):
     }
     
     try:
-        response = requests.get(BASE_URL, params=params)
+        response = requests.get(BASE_URL, params=params, timeout=30)
         data = response.json()
         
         if 'Time Series (Daily)' not in data:
