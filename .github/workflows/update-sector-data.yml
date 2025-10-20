@@ -41,11 +41,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Check if market is open and run scanner
+    - name: Run sector scanner
       env:
         ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
       run: |
-        python3 scripts/run_during_market_hours.py
+        python3 scripts/sector_rotation_scanner.py
       continue-on-error: false
     
     - name: Run AI market analysis
