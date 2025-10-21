@@ -9,6 +9,7 @@ import json
 import shutil
 from datetime import datetime
 import glob
+from zoneinfo import ZoneInfo
 
 def update_github_pages():
     """Copy latest scan results to docs folder for GitHub Pages"""
@@ -46,8 +47,10 @@ def update_github_pages():
             ai_analysis_text = ai_data.get('ai_analysis', '')
     
     # Create the latest_data.json for GitHub Pages
+    # Use CET timezone for the timestamp
+    cet_tz = ZoneInfo('Europe/Berlin')  # CET/CEST timezone
     page_data = {
-        'timestamp': datetime.now().isoformat(),
+        'timestamp': datetime.now(cet_tz).isoformat(),
         'sectors': sector_data,
         'chart_file': os.path.basename(latest_chart) if latest_chart else '',
         'heatmap_file': os.path.basename(latest_heatmap) if latest_heatmap else '',
