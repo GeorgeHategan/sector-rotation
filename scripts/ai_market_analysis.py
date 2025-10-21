@@ -105,7 +105,12 @@ Please be specific, data-driven, and provide your professional opinion based on 
         )
         
         analysis = response.choices[0].message.content
-        return analysis
+        
+        # Add timestamp at the top of the analysis
+        timestamp_header = f"Analysis Generated: {datetime.now().strftime('%B %d, %Y at %H:%M:%S CET')}\n\n"
+        analysis_with_timestamp = timestamp_header + analysis
+        
+        return analysis_with_timestamp
         
     except Exception as e:
         print(f"❌ Error calling OpenAI API: {e}")
