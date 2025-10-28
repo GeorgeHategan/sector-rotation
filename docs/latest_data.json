@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-10-28T20:41:09.352455+01:00",
+  "timestamp": "2025-10-28T21:41:50.709476+01:00",
   "sectors": [
     {
       "Sector": "Technology",
       "Ticker": "XLK",
-      "1D_Change_%": 1.85,
-      "5D_Change_%": 3.7,
+      "1D_Change_%": 0.98,
+      "5D_Change_%": 5.76,
       "20D_Change_%": 6.08,
-      "Volume_Trend_%": -21.79,
-      "RS_vs_SMA20_%": 4.29,
-      "Momentum_Score": 3.25,
+      "Volume_Trend_%": -18.47,
+      "RS_vs_SMA20_%": 4.94,
+      "Momentum_Score": 3.43,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 299.0
+      "Current_Price": 301.92
     },
     {
       "Sector": "Biotechnology",
@@ -26,76 +26,16 @@
       "Current_Price": 157.11
     },
     {
-      "Sector": "Utilities",
-      "Ticker": "XLU",
-      "1D_Change_%": 0.27,
-      "5D_Change_%": 1.14,
-      "20D_Change_%": 5.08,
-      "Volume_Trend_%": -14.16,
-      "RS_vs_SMA20_%": 1.35,
-      "Momentum_Score": 1.49,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 91.64
-    },
-    {
-      "Sector": "Healthcare",
-      "Ticker": "XLV",
-      "1D_Change_%": 0.23,
-      "5D_Change_%": 0.85,
-      "20D_Change_%": 5.17,
-      "Volume_Trend_%": -23.57,
-      "RS_vs_SMA20_%": 1.77,
-      "Momentum_Score": 1.41,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 146.37
-    },
-    {
       "Sector": "Consumer Discretionary",
       "Ticker": "XLY",
-      "1D_Change_%": 1.44,
-      "5D_Change_%": 0.8,
-      "20D_Change_%": 0.6,
-      "Volume_Trend_%": -17.55,
-      "RS_vs_SMA20_%": 1.86,
-      "Momentum_Score": 1.08,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 241.08
-    },
-    {
-      "Sector": "Real Estate",
-      "Ticker": "XLRE",
-      "1D_Change_%": 0.21,
-      "5D_Change_%": 0.92,
-      "20D_Change_%": 1.45,
-      "Volume_Trend_%": 12.4,
-      "RS_vs_SMA20_%": 2.04,
-      "Momentum_Score": 0.67,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 42.74
-    },
-    {
-      "Sector": "Industrials",
-      "Ticker": "XLI",
-      "1D_Change_%": 0.57,
-      "5D_Change_%": 0.59,
-      "20D_Change_%": 1.01,
-      "Volume_Trend_%": -9.76,
-      "RS_vs_SMA20_%": 1.42,
-      "Momentum_Score": 0.66,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 155.79
-    },
-    {
-      "Sector": "Communication Services",
-      "Ticker": "XLC",
-      "1D_Change_%": 1.39,
-      "5D_Change_%": 0.44,
-      "20D_Change_%": -1.02,
-      "Volume_Trend_%": 5.22,
-      "RS_vs_SMA20_%": 1.3,
-      "Momentum_Score": 0.62,
-      "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 117.16
+      "1D_Change_%": 0.01,
+      "5D_Change_%": 1.6,
+      "20D_Change_%": -0.02,
+      "Volume_Trend_%": -15.5,
+      "RS_vs_SMA20_%": 1.84,
+      "Momentum_Score": 0.48,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 241.1
     },
     {
       "Sector": "Energy",
@@ -110,55 +50,115 @@
       "Current_Price": 88.28
     },
     {
-      "Sector": "Financials",
-      "Ticker": "XLF",
-      "1D_Change_%": 0.41,
-      "5D_Change_%": 1.14,
-      "20D_Change_%": -1.0,
-      "Volume_Trend_%": -15.38,
-      "RS_vs_SMA20_%": 0.55,
-      "Momentum_Score": 0.35,
-      "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 53.33
-    },
-    {
-      "Sector": "Consumer Staples",
-      "Ticker": "XLP",
-      "1D_Change_%": 0.16,
-      "5D_Change_%": -0.09,
-      "20D_Change_%": 1.08,
-      "Volume_Trend_%": 11.39,
-      "RS_vs_SMA20_%": 0.72,
-      "Momentum_Score": 0.27,
-      "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 79.22
-    },
-    {
       "Sector": "Materials",
       "Ticker": "XLB",
-      "1D_Change_%": -0.04,
-      "5D_Change_%": 0.43,
-      "20D_Change_%": -0.73,
-      "Volume_Trend_%": -1.64,
-      "RS_vs_SMA20_%": 0.1,
-      "Momentum_Score": -0.04,
+      "1D_Change_%": 0.12,
+      "5D_Change_%": 0.85,
+      "20D_Change_%": 0.45,
+      "Volume_Trend_%": 3.0,
+      "RS_vs_SMA20_%": 0.25,
+      "Momentum_Score": 0.4,
       "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 88.97
+      "Current_Price": 89.08
+    },
+    {
+      "Sector": "Industrials",
+      "Ticker": "XLI",
+      "1D_Change_%": -0.71,
+      "5D_Change_%": 1.19,
+      "20D_Change_%": 0.58,
+      "Volume_Trend_%": -15.14,
+      "RS_vs_SMA20_%": 0.69,
+      "Momentum_Score": 0.12,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 154.69
+    },
+    {
+      "Sector": "Communication Services",
+      "Ticker": "XLC",
+      "1D_Change_%": -0.5,
+      "5D_Change_%": 0.81,
+      "20D_Change_%": -0.11,
+      "Volume_Trend_%": -1.66,
+      "RS_vs_SMA20_%": 0.87,
+      "Momentum_Score": -0.03,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 116.58
+    },
+    {
+      "Sector": "Financials",
+      "Ticker": "XLF",
+      "1D_Change_%": -0.65,
+      "5D_Change_%": 1.06,
+      "20D_Change_%": -0.76,
+      "Volume_Trend_%": -14.36,
+      "RS_vs_SMA20_%": -0.02,
+      "Momentum_Score": -0.16,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 52.98
+    },
+    {
+      "Sector": "Healthcare",
+      "Ticker": "XLV",
+      "1D_Change_%": -0.65,
+      "5D_Change_%": -0.37,
+      "20D_Change_%": 1.36,
+      "Volume_Trend_%": -20.54,
+      "RS_vs_SMA20_%": 0.89,
+      "Momentum_Score": -0.16,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 145.42
+    },
+    {
+      "Sector": "Utilities",
+      "Ticker": "XLU",
+      "1D_Change_%": -1.66,
+      "5D_Change_%": -0.31,
+      "20D_Change_%": 2.35,
+      "Volume_Trend_%": -15.34,
+      "RS_vs_SMA20_%": -0.49,
+      "Momentum_Score": -0.45,
+      "Trend": "\u27a1\ufe0f  NEUTRAL",
+      "Current_Price": 90.12
     },
     {
       "Sector": "Regional Banking",
       "Ticker": "KRE",
-      "1D_Change_%": -0.08,
-      "5D_Change_%": 0.89,
-      "20D_Change_%": -3.36,
-      "Volume_Trend_%": -23.02,
-      "RS_vs_SMA20_%": -0.93,
-      "Momentum_Score": -0.45,
-      "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 61.17
+      "1D_Change_%": -0.44,
+      "5D_Change_%": 0.76,
+      "20D_Change_%": -3.29,
+      "Volume_Trend_%": -26.07,
+      "RS_vs_SMA20_%": -1.18,
+      "Momentum_Score": -0.65,
+      "Trend": "\ud83d\udcc9 SELLING",
+      "Current_Price": 60.9
+    },
+    {
+      "Sector": "Consumer Staples",
+      "Ticker": "XLP",
+      "1D_Change_%": -1.02,
+      "5D_Change_%": -1.67,
+      "20D_Change_%": 0.2,
+      "Volume_Trend_%": -1.21,
+      "RS_vs_SMA20_%": -0.31,
+      "Momentum_Score": -0.97,
+      "Trend": "\ud83d\udcc9 SELLING",
+      "Current_Price": 78.41
+    },
+    {
+      "Sector": "Real Estate",
+      "Ticker": "XLRE",
+      "1D_Change_%": -2.25,
+      "5D_Change_%": -1.79,
+      "20D_Change_%": -0.83,
+      "Volume_Trend_%": 30.23,
+      "RS_vs_SMA20_%": -0.21,
+      "Momentum_Score": -1.83,
+      "Trend": "\ud83d\udd3b STRONG SELL",
+      "Current_Price": 41.78
     }
   ],
-  "chart_file": "sector_rotation_chart_20251028_194042.png",
-  "heatmap_file": "sector_heatmap_20251028_194042.png",
-  "ai_analysis": "Analysis Generated: October 28, 2025 at 19:41:09 CET\n\n### Market Phase Assessment\nBased on the sector rotation data, the market appears to be in a **transitional phase**. The presence of buying trends across most sectors, coupled with positive short-term momentum, suggests a market that is attempting to recover or consolidate after a period of weakness. The strongest sectors are predominantly growth-oriented, indicating a shift in investor sentiment towards risk-taking.\n\n### Risk Environment\nThe market environment is leaning towards **Risk-On**, as evidenced by the strong performance in sectors like Technology and Biotechnology, which are typically favored in risk-taking environments. The volume trend, however, is negative across most sectors, indicating that the buying interest might not be robust or widespread yet, which is characteristic of a cautious Risk-On phase.\n\n### Sector Rotation Pattern\nThe current rotation pattern shows a clear preference for growth sectors, such as Technology and Biotechnology, which are leading in terms of momentum and relative strength. Defensive sectors like Utilities and Healthcare are also showing buying trends, but with lower momentum scores, suggesting a mixed rotation pattern where investors are selectively taking on risk while maintaining some defensive positions.\n\n### Cyclical vs Defensive Analysis\n- **Cyclical Sectors**: \n  - **Technology (XLK)**: Leading with strong momentum and relative strength, indicating robust growth expectations.\n  - **Consumer Discretionary (XLY)**: Positive short-term performance but lagging in momentum compared to Technology.\n  - **Industrials (XLI)**: Modest gains with low momentum, suggesting limited enthusiasm for industrial growth.\n  - **Financials (XLF)**: Neutral trend with negative 20D change, indicating caution in financials.\n  \n- **Defensive Sectors**:\n  - **Utilities (XLU)** and **Healthcare (XLV)**: Both are experiencing buying trends with moderate momentum, indicating a balanced approach by investors.\n  - **Consumer Staples (XLP)**: Neutral trend and low momentum, suggesting limited defensive positioning.\n\n### Key Insights\n1. **Technology and Biotechnology Lead**: Investors should consider overweighting Technology (XLK) and Biotechnology (IBB) due to their strong momentum and relative strength.\n2. **Cautious Risk-On**: While there is a tilt towards growth, ensure portfolio diversification with some defensive plays, such as Utilities (XLU) and Healthcare (XLV), given their positive trends.\n3. **Volume Caution**: The negative volume trend across most sectors suggests that current price movements may not be supported by strong institutional buying. Traders should watch for volume confirmation before increasing positions.\n4. **Monitor Financials**: While currently neutral, any shift towards a positive trend in Financials (XLF) could signal a broader market recovery.\n5. **Regional Banks as Risk**: Continues to be weak, indicating ongoing concerns in credit markets or regional economic conditions.\n\n### Market Outlook\n- **Short-term (1-2 weeks)**: Expect continued volatility with a bias towards growth sectors. Monitor volume trends for confirmation of sustained buying interest.\n- **Medium-term (1-3 months)**: Potential for a gradual uptrend as growth sectors gain traction, but watch for macroeconomic developments and central bank policies that could impact risk appetite.\n\n### Risk Factors\n1. **Macroeconomic Uncertainty**: Inflation, interest rates, and economic recovery data could impact investor sentiment and sector performance.\n2. **Geopolitical Tensions**: Any escalation in geopolitical conflicts could trigger a shift towards a Risk-Off environment.\n3. **Earnings Season Volatility**: Upcoming earnings reports could lead to sector-specific volatility, especially in high-growth sectors like Technology.\n4. **Liquidity Concerns**: Persistent negative volume trends may indicate underlying liquidity issues, potentially exacerbating market moves.\n\nIn conclusion, the market shows signs of transitioning towards a more optimistic phase, but caution should be exercised given the mixed signals and potential risks on the horizon."
+  "chart_file": "sector_rotation_chart_20251028_204132.png",
+  "heatmap_file": "sector_heatmap_20251028_204132.png",
+  "ai_analysis": "Analysis Generated: October 28, 2025 at 20:41:50 CET\n\n### Market Phase Assessment\nBased on the data provided, the market appears to be in a **transitional phase**. The presence of buying trends in Technology and Biotechnology, coupled with neutral trends in most other sectors, suggests a market that is attempting to find direction. The average market momentum of 0.25 indicates mild positive sentiment, but not strong enough to classify as a full-fledged bull market.\n\n### Risk Environment\nThe data suggests a **Risk-On environment**. The strength in Technology and Biotechnology, both of which are typically seen as riskier, growth-oriented sectors, indicates investor confidence in economic growth prospects. However, the weakness in defensive sectors like Consumer Staples and Real Estate implies a lack of investor appetite for safety.\n\n### Sector Rotation Pattern\nThe current rotation pattern shows an inclination towards growth and innovation, with Technology and Biotechnology leading the charge. This suggests market expectations of continued economic expansion or recovery, with investors favoring sectors that benefit from technological advancements and healthcare innovation.\n\n### Cyclical vs Defensive Analysis\n- **Cyclical Sectors**: Technology (XLK) is performing strongly, as indicated by its buying trend and substantial gains over 5 and 20 days. Consumer Discretionary (XLY) is neutral but slightly positive over 5 days. Industrials (XLI) and Financials (XLF) show neutral trends with minor gains, indicating cautious optimism.\n- **Defensive Sectors**: Utilities (XLU) and Consumer Staples (XLP) are underperforming, with neutral to selling trends. Healthcare (XLV) is neutral but shows some resilience with a slight 20-day gain.\n\n### Key Insights\n1. **Leverage Technology and Biotechnology**: Investors should focus on Technology (XLK) and Biotechnology (IBB) as these sectors show strong momentum and positive trends.\n2. **Caution in Real Estate**: Avoid or hedge against Real Estate (XLRE), which is in a strong sell trend with significant volume increases, potentially indicating further downside.\n3. **Monitor Consumer Discretionary**: The neutral trend in Consumer Discretionary (XLY) could shift; watch for signals of economic sentiment shifts.\n4. **Sector Realignment**: Consider reallocating from defensive sectors like Consumer Staples (XLP) and Utilities (XLU) to more growth-oriented sectors.\n5. **Volume Trends as a Red Flag**: Be cautious of sectors with increasing volume alongside negative trends, like Real Estate, which may indicate stronger bearish sentiment.\n\n### Market Outlook\n- **Short-term (1-2 weeks)**: Expect continued strength in Technology and Biotechnology. Real Estate and Consumer Staples might see further pressure. Monitor macroeconomic indicators and earnings reports for potential market-moving events.\n- **Medium-term (1-3 months)**: Potential for Technology and Biotechnology to maintain upward momentum as economic recovery themes persist. Watch for shifts in policy or economic data that could influence market sentiment or sector performance.\n\n### Risk Factors\n- **Interest Rates and Inflation**: Rising interest rates or unexpected inflation spikes could dampen growth sector enthusiasm.\n- **Geopolitical Tensions**: Any escalation could prompt a shift back to defensive sectors as investors seek safety.\n- **Economic Data Surprises**: Negative surprises in employment numbers or GDP growth could alter the current Risk-On sentiment and affect sector rotations.\n\nOverall, the market is navigating a complex environment with a cautious optimism towards growth sectors, but investors should remain vigilant for signs of volatility or shifts in economic indicators."
 }
