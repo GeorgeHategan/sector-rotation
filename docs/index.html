@@ -126,6 +126,39 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        .historical-momentum-card {
+            background: rgba(30, 30, 46, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 25px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .historical-momentum-card h2 {
+            color: #60a5fa;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+        }
+        
+        .historical-momentum-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
+            flex-grow: 1;
+        }
+        
+        .historical-momentum-card p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        
         .card h2 {
             color: #60a5fa;
             margin-bottom: 12px;
@@ -295,13 +328,13 @@
             </div>
         </div>
         
-        <div class="chart-container" id="historicalMomentumContainer">
+        <div class="historical-momentum-card" id="historicalMomentumContainer">
             <h2>📈 Historical Market Momentum Trend</h2>
             <img id="historicalMomentumChart" src="historical_market_momentum.png" alt="Historical Market Momentum" onerror="this.parentElement.style.display='none'">
-            <p style="text-align: center; color: #9ca3af; font-size: 0.9em; margin-top: 10px;">
+            <p style="text-align: center; color: #9ca3af; font-size: 0.9em;">
                 Shows how overall market momentum has changed over time. 
-                <span style="color: #22c55e;">●</span> Bullish periods 
-                <span style="color: #ef4444;">●</span> Bearish periods
+                <span style="color: #22c55e;">●</span> Bullish 
+                <span style="color: #ef4444;">●</span> Bearish
             </p>
         </div>
         
