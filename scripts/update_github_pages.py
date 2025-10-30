@@ -23,6 +23,9 @@ def update_github_pages():
     heatmap_files = sorted(glob.glob('output/heatmaps/sector_heatmap_*.png'), key=os.path.getmtime, reverse=True)
     ai_analysis_files = sorted(glob.glob('output/reports/ai_market_analysis_*.json'), key=os.path.getmtime, reverse=True)
     
+    # Check for historical momentum chart
+    historical_chart = 'output/charts/historical_market_momentum.png' if os.path.exists('output/charts/historical_market_momentum.png') else None
+    
     if not json_files:
         print("❌ No sector rotation data found. Run sector_rotation_scanner.py first.")
         return
@@ -71,6 +74,11 @@ def update_github_pages():
     if latest_heatmap:
         shutil.copy(latest_heatmap, f'docs/{os.path.basename(latest_heatmap)}')
         print(f"✅ Copied {latest_heatmap} to docs/")
+    
+    # Copy historical momentum chart if it exists
+    if historical_chart:
+        shutil.copy(historical_chart, 'docs/historical_market_momentum.png')
+        print(f"✅ Copied historical momentum chart to docs/")
     
     if latest_ai_analysis:
         print(f"✅ Included AI analysis in latest_data.json")

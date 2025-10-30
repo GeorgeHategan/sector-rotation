@@ -667,7 +667,156 @@ def create_sector_chart(df, filename='sector_rotation_chart.png'):
 
 
 # ============================================================================
-# FUNCTION 6: SCAN ALL SECTORS (Main Data Collection Function)
+# FUNCTION 6: CREATE HISTORICAL MOMENTUM CHART (Track Market Trends Over Time)
+# ============================================================================
+def create_historical_momentum_chart(filename='output/charts/historical_market_momentum.png'):
+    """
+    Creates a chart showing how overall market momentum has changed over time.
+    
+    WHAT IT DOES:
+    - Reads all historical scan files
+    - Calculates average market momentum for each scan
+    - Plots a line chart showing the trend
+    - Helps you see if market is becoming more bullish or bearish
+    
+    WHY THIS IS USEFUL:
+    - See if bullish/bearish trend is getting stronger or weaker
+    - Identify major turning points in market sentiment
+    - Compare current momentum to recent history
+    
+    INTERPRETATION:
+    - Line going UP = Market becoming more bullish over time
+    - Line going DOWN = Market becoming more bearish over time
+    - Line crossing zero = Major shift from bearish to bullish (or vice versa)
+    
+    RETURNS:
+    - Filename of saved chart, or None if insufficient data
+    """
+    
+    import glob
+    from datetime import datetime
+    
+    print("\n📈 Creating historical market momentum chart...")
+    
+    # ========================================================================
+    # STEP 1: FIND ALL HISTORICAL DATA FILES
+    # ========================================================================
+    # Look for all JSON files with sector rotation data
+    json_files = sorted(glob.glob('data/historical/sector_rotation_*.json'))
+    
+    if len(json_files) < 2:
+        print("⚠️  Not enough historical data (need at least 2 scans)")
+        return None
+    
+    # ========================================================================
+    # STEP 2: EXTRACT TIMESTAMPS AND MOMENTUM SCORES
+    # ========================================================================
+    timestamps = []
+    avg_momentums = []
+    
+    for json_file in json_files:
+        try:
+            # Extract timestamp from filename
+            # Example: sector_rotation_20251028_154101.json
+            basename = os.path.basename(json_file)
+            date_str = basename.replace('sector_rotation_', '').replace('.json', '')
+            timestamp = datetime.strptime(date_str, '%Y%m%d_%H%M%S')
+            
+            # Load the data
+            with open(json_file, 'r') as f:
+                data = json.load(f)
+            
+            # Calculate average momentum across all sectors
+            if isinstance(data, list) and len(data) > 0:
+                total_momentum = sum(sector.get('Momentum_Score', 0) for sector in data)
+                avg_momentum = total_momentum / len(data)
+                
+                timestamps.append(timestamp)
+                avg_momentums.append(avg_momentum)
+        
+        except Exception as e:
+            # Skip files that can't be read
+            continue
+    
+    if len(timestamps) < 2:
+        print("⚠️  Could not read enough historical data")
+        return None
+    
+    # ========================================================================
+    # STEP 3: CREATE THE CHART
+    # ========================================================================
+    
+    plt.style.use('dark_background')
+    fig, ax = plt.subplots(figsize=(14, 8), facecolor='#1a1a2e')
+    ax.set_facecolor('#1a1a2e')
+    
+    # Plot the line chart
+    ax.plot(timestamps, avg_momentums, 
+            color='#60a5fa', linewidth=2.5, marker='o', markersize=4, 
+            label='Average Market Momentum')
+    
+    # Add a horizontal line at zero (divides bullish from bearish)
+    ax.axhline(y=0, color='#9ca3af', linestyle='--', linewidth=1, alpha=0.5, 
+               label='Neutral Line')
+    
+    # Fill areas above/below zero with color
+    ax.fill_between(timestamps, avg_momentums, 0, 
+                     where=[m >= 0 for m in avg_momentums],
+                     alpha=0.3, color='#22c55e', label='Bullish Territory')
+    ax.fill_between(timestamps, avg_momentums, 0, 
+                     where=[m < 0 for m in avg_momentums],
+                     alpha=0.3, color='#dc2626', label='Bearish Territory')
+    
+    # Add grid for easier reading
+    ax.grid(True, alpha=0.2, color='#4b5563', linestyle='-', linewidth=0.5)
+    
+    # Labels and title
+    ax.set_xlabel('Date', fontsize=12, fontweight='bold', color='#e0e0e0')
+    ax.set_ylabel('Average Momentum Score', fontsize=12, fontweight='bold', color='#e0e0e0')
+    ax.set_title('Historical Market Momentum Trend', fontsize=16, fontweight='bold', 
+                 pad=20, color='#60a5fa')
+    
+    # Format x-axis to show dates nicely
+    import matplotlib.dates as mdates
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
+    ax.xaxis.set_major_locator(mdates.DayLocator(interval=1))
+    plt.xticks(rotation=45, ha='right')
+    
+    # Add legend
+    ax.legend(loc='upper left', fontsize=10, framealpha=0.9)
+    
+    # Style the tick marks
+    ax.tick_params(colors='#e0e0e0')
+    
+    # Add current value annotation
+    if len(avg_momentums) > 0:
+        last_momentum = avg_momentums[-1]
+        last_time = timestamps[-1]
+        ax.annotate(f'Current: {last_momentum:+.2f}',
+                   xy=(last_time, last_momentum),
+                   xytext=(10, 10), textcoords='offset points',
+                   bbox=dict(boxstyle='round,pad=0.5', facecolor='#1e293b', alpha=0.8),
+                   fontsize=10, fontweight='bold', color='#60a5fa',
+                   arrowprops=dict(arrowstyle='->', color='#60a5fa', lw=1.5))
+    
+    # Add timestamp
+    fig.text(0.99, 0.01, 
+             f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC | Data points: {len(timestamps)}", 
+             ha='right', fontsize=8, style='italic', alpha=0.7, color='#9ca3af')
+    
+    # Save the chart
+    plt.tight_layout()
+    plt.savefig(filename, dpi=150, bbox_inches='tight', facecolor='#1a1a2e')
+    plt.close()
+    
+    print(f"✅ Historical momentum chart saved to: {filename}")
+    print(f"   Data points: {len(timestamps)} | Date range: {timestamps[0].strftime('%Y-%m-%d')} to {timestamps[-1].strftime('%Y-%m-%d')}")
+    
+    return filename
+
+
+# ============================================================================
+# FUNCTION 7: SCAN ALL SECTORS (Main Data Collection Function)
 # ============================================================================
 def scan_sector_rotation():
     """
@@ -881,6 +1030,9 @@ def main():
     create_sector_chart(df, chart_file)
     create_sector_heatmap(df, heatmap_file)
     
+    # Create historical momentum chart (shows trend over time)
+    historical_chart = create_historical_momentum_chart()
+    
     # ========================================================================
     # STEP 4: SAVE DATA TO FILES
     # ========================================================================
@@ -903,6 +1055,8 @@ def main():
     print(f"   - {json_file}")
     print(f"   - {chart_file}")
     print(f"   - {heatmap_file}")
+    if historical_chart:
+        print(f"   - {historical_chart}")
     print("=" * 80)
 
 
