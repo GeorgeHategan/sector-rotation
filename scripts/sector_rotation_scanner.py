@@ -747,7 +747,7 @@ def create_historical_momentum_chart(filename='output/charts/historical_market_m
     # ========================================================================
     
     plt.style.use('dark_background')
-    fig, ax = plt.subplots(figsize=(14, 8), facecolor='#1a1a2e')
+    fig, ax = plt.subplots(figsize=(14, 4), facecolor='#1a1a2e')
     ax.set_facecolor('#1a1a2e')
     
     # Plot the line chart
