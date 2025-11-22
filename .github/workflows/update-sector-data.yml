@@ -9,12 +9,9 @@ on:
     # CET: CEST (UTC+2) in summer, CET (UTC+1) in winter
     # Current (Oct 2025 - DST active): EDT = UTC-4, CEST = UTC+2
     - cron: '30 13 * * 1-5'  # 3:30 PM CEST = 9:30 AM EDT (Market Open)
-    - cron: '30 14 * * 1-5'  # 4:30 PM CEST = 10:30 AM EDT
-    - cron: '30 15 * * 1-5'  # 5:30 PM CEST = 11:30 AM EDT
-    - cron: '30 16 * * 1-5'  # 6:30 PM CEST = 12:30 PM EDT
+  
     - cron: '30 17 * * 1-5'  # 7:30 PM CEST = 1:30 PM EDT
-    - cron: '30 18 * * 1-5'  # 8:30 PM CEST = 2:30 PM EDT
-    - cron: '30 19 * * 1-5'  # 9:30 PM CEST = 3:30 PM EDT
+
     - cron: '30 20 * * 1-5'  # 10:30 PM CEST = 4:30 PM EDT (Market Close)
   
   # Allow manual trigger
