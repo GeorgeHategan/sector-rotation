@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-12T21:45:05.078935+01:00",
+  "timestamp": "2026-03-13T15:23:17.805038+01:00",
   "sectors": [
     {
       "Sector": "Energy",
@@ -7,7 +7,7 @@
       "1D_Change_%": 0.93,
       "5D_Change_%": 1.66,
       "20D_Change_%": 6.54,
-      "Volume_Trend_%": 5.56,
+      "Volume_Trend_%": 5.6,
       "RS_vs_SMA20_%": 3.41,
       "Momentum_Score": 2.27,
       "Trend": "\ud83d\ude80 STRONG BUY",
@@ -16,26 +16,26 @@
     {
       "Sector": "Utilities",
       "Ticker": "XLU",
-      "1D_Change_%": 0.74,
-      "5D_Change_%": -0.49,
-      "20D_Change_%": 2.78,
-      "Volume_Trend_%": -20.36,
-      "RS_vs_SMA20_%": -0.38,
-      "Momentum_Score": 0.78,
+      "1D_Change_%": 0.71,
+      "5D_Change_%": -0.51,
+      "20D_Change_%": 2.76,
+      "Volume_Trend_%": -20.35,
+      "RS_vs_SMA20_%": -0.4,
+      "Momentum_Score": 0.76,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 46.51
+      "Current_Price": 46.5
     },
     {
       "Sector": "Technology",
       "Ticker": "XLK",
-      "1D_Change_%": -1.9,
-      "5D_Change_%": 0.34,
-      "20D_Change_%": -1.04,
-      "Volume_Trend_%": 9.85,
-      "RS_vs_SMA20_%": -1.39,
-      "Momentum_Score": -1.06,
+      "1D_Change_%": -1.84,
+      "5D_Change_%": 0.4,
+      "20D_Change_%": -0.98,
+      "Volume_Trend_%": 9.92,
+      "RS_vs_SMA20_%": -1.33,
+      "Momentum_Score": -1.0,
       "Trend": "\ud83d\udcc9 SELLING",
-      "Current_Price": 137.76
+      "Current_Price": 137.84
     },
     {
       "Sector": "Real Estate",
@@ -52,14 +52,14 @@
     {
       "Sector": "Communication Services",
       "Ticker": "XLC",
-      "1D_Change_%": -1.47,
+      "1D_Change_%": -1.48,
       "5D_Change_%": -1.86,
-      "20D_Change_%": 0.56,
-      "Volume_Trend_%": 15.17,
+      "20D_Change_%": 0.55,
+      "Volume_Trend_%": 15.18,
       "RS_vs_SMA20_%": -1.08,
-      "Momentum_Score": -1.18,
+      "Momentum_Score": -1.19,
       "Trend": "\ud83d\udcc9 SELLING",
-      "Current_Price": 115.28
+      "Current_Price": 115.27
     },
     {
       "Sector": "Materials",
@@ -67,7 +67,7 @@
       "1D_Change_%": -0.32,
       "5D_Change_%": -0.36,
       "20D_Change_%": -5.96,
-      "Volume_Trend_%": 4.72,
+      "Volume_Trend_%": 4.77,
       "RS_vs_SMA20_%": -4.52,
       "Momentum_Score": -1.46,
       "Trend": "\ud83d\udcc9 SELLING",
@@ -91,7 +91,7 @@
       "1D_Change_%": -2.72,
       "5D_Change_%": -0.79,
       "20D_Change_%": -2.58,
-      "Volume_Trend_%": 3.67,
+      "Volume_Trend_%": 3.74,
       "RS_vs_SMA20_%": -3.67,
       "Momentum_Score": -2.11,
       "Trend": "\ud83d\udd3b STRONG SELL",
@@ -100,14 +100,14 @@
     {
       "Sector": "Healthcare",
       "Ticker": "XLV",
-      "1D_Change_%": -1.75,
+      "1D_Change_%": -1.76,
       "5D_Change_%": -1.66,
       "20D_Change_%": -3.74,
-      "Volume_Trend_%": 4.91,
-      "RS_vs_SMA20_%": -3.86,
-      "Momentum_Score": -2.12,
+      "Volume_Trend_%": 4.96,
+      "RS_vs_SMA20_%": -3.87,
+      "Momentum_Score": -2.13,
       "Trend": "\ud83d\udd3b STRONG SELL",
-      "Current_Price": 150.17
+      "Current_Price": 150.16
     },
     {
       "Sector": "Consumer Discretionary",
@@ -124,41 +124,41 @@
     {
       "Sector": "Financials",
       "Ticker": "XLF",
-      "1D_Change_%": -1.61,
-      "5D_Change_%": -3.42,
-      "20D_Change_%": -5.51,
-      "Volume_Trend_%": 5.34,
-      "RS_vs_SMA20_%": -4.7,
-      "Momentum_Score": -2.93,
+      "1D_Change_%": -1.63,
+      "5D_Change_%": -3.44,
+      "20D_Change_%": -5.53,
+      "Volume_Trend_%": 5.42,
+      "RS_vs_SMA20_%": -4.72,
+      "Momentum_Score": -2.95,
       "Trend": "\ud83d\udd3b STRONG SELL",
-      "Current_Price": 48.84
+      "Current_Price": 48.83
     },
     {
       "Sector": "Industrials",
       "Ticker": "XLI",
-      "1D_Change_%": -2.53,
-      "5D_Change_%": -2.79,
-      "20D_Change_%": -4.37,
-      "Volume_Trend_%": 17.03,
-      "RS_vs_SMA20_%": -5.05,
-      "Momentum_Score": -2.98,
+      "1D_Change_%": -2.51,
+      "5D_Change_%": -2.77,
+      "20D_Change_%": -4.35,
+      "Volume_Trend_%": 17.04,
+      "RS_vs_SMA20_%": -5.03,
+      "Momentum_Score": -2.95,
       "Trend": "\ud83d\udd3b STRONG SELL",
-      "Current_Price": 165.2
+      "Current_Price": 165.24
     },
     {
       "Sector": "Regional Banking",
       "Ticker": "KRE",
-      "1D_Change_%": -0.8,
-      "5D_Change_%": -2.22,
-      "20D_Change_%": -10.23,
-      "Volume_Trend_%": 15.15,
-      "RS_vs_SMA20_%": -6.88,
-      "Momentum_Score": -3.11,
+      "1D_Change_%": -0.81,
+      "5D_Change_%": -2.23,
+      "20D_Change_%": -10.24,
+      "Volume_Trend_%": 15.25,
+      "RS_vs_SMA20_%": -6.9,
+      "Momentum_Score": -3.12,
       "Trend": "\ud83d\udd3b STRONG SELL",
-      "Current_Price": 63.47
+      "Current_Price": 63.46
     }
   ],
-  "chart_file": "sector_rotation_chart_20260312_204440.png",
-  "heatmap_file": "sector_heatmap_20260312_204440.png",
-  "ai_analysis": "Analysis Generated: March 12, 2026 at 20:45:04 CET\n\n### Market Phase Assessment\n\nBased on the sector rotation data, the market appears to be in a **transitional phase**, potentially moving from a bull market to a bear market. The predominant selling trends in most sectors, combined with negative momentum scores, suggest waning bullish momentum and increasing bearish pressure. The exception is the Energy sector, which is demonstrating resilience.\n\n### Risk Environment\n\nThis is a **Risk-Off environment**. The dominance of selling trends, particularly in cyclical sectors like Technology, Financials, and Consumer Discretionary, indicates a shift towards more conservative investment strategies. Investors appear to be retreating from higher-risk sectors, favoring sectors like Energy, which has shown strength, and Utilities, which, despite some negative indicators, remains relatively stable.\n\n### Sector Rotation Pattern\n\nThe sector rotation pattern indicates caution among investors, with a preference for sectors that can perform well during periods of economic uncertainty. The strong performance of Energy suggests expectations of continued or rising demand for energy resources or geopolitical factors affecting supply. Utilities are maintaining relative strength due to their defensive nature, even though their volume trend is negative, suggesting muted investor interest but stable price performance.\n\n### Cyclical vs. Defensive Analysis\n\n- **Cyclical Sectors**: Technology, Financials, Consumer Discretionary, and Industrials are all experiencing strong selling pressure. The negative momentum and recent declines suggest that investors are moving away from these sectors, anticipating economic slowdown or increased volatility.\n  \n- **Defensive Sectors**: Utilities and Consumer Staples are showing weaker negative trends compared to cyclical sectors. Utilities, in particular, are holding up better, likely due to their perceived stability and dividend yields in uncertain times. Healthcare shows a strong sell trend, which is unusual for a defensive sector, indicating specific pressures within that sector, possibly related to regulatory or earnings concerns.\n\n### Key Insights\n\n1. **Energy Opportunities**: Investors should consider increasing exposure to the Energy sector (XLE), as it currently shows strong buying signals and momentum. This could be a hedge against inflation or geopolitical tensions affecting energy supplies.\n\n2. **Caution in Cyclicals**: Avoid or reduce exposure to cyclical sectors like Technology (XLK), Financials (XLF), and Industrials (XLI) due to strong selling trends and negative momentum scores.\n\n3. **Defensive Positioning**: Consider allocating more to Utilities (XLU) and possibly Consumer Staples (XLP) for stability, despite some negative trends, as they typically offer more protection in volatile markets.\n\n4. **Monitor Volume Trends**: The increase in volume trends, particularly in Communication Services (XLC) and Industrials (XLI), could indicate institutional moves that may lead to short-term volatility or reversals.\n\n5. **Stay Alert to Macro Changes**: Keep an eye on macroeconomic indicators and geopolitical news that could impact energy prices and defensive sectors' performance.\n\n### Market Outlook\n\n- **Short-term (1-2 weeks)**: Expect continued volatility with potential further downside in cyclical sectors. Energy may continue to outperform if current price and momentum trends persist.\n\n- **Medium-term (1-3 months)**: The market may stabilize if defensive sectors begin to attract more capital and if Energy maintains its strength. However, significant risks remain if macroeconomic conditions worsen or if there is a shift in monetary policy.\n\n### Risk Factors\n\n1. **Economic Data**: Poor economic data could exacerbate the downturn in cyclical sectors and increase volatility across the board.\n\n2. **Geopolitical Tensions**: Escalating geopolitical tensions, particularly those affecting energy supplies, could lead to increased volatility and abrupt market shifts.\n\n3. **Interest Rate Changes**: Unexpected changes in interest rates could impact both defensive (due to debt costs) and cyclical sectors, influencing market dynamics.\n\n4. **Sector-Specific Risks**: Regulatory changes, particularly in Healthcare and Financials, could further impact these sectors negatively.\n\nBy remaining vigilant and adjusting strategies accordingly, investors can better navigate this transitional market phase."
+  "chart_file": "sector_rotation_chart_20260313_142302.png",
+  "heatmap_file": "sector_heatmap_20260313_142302.png",
+  "ai_analysis": "Analysis Generated: March 13, 2026 at 14:23:17 CET\n\n### Market Phase Assessment:\nGiven the prevailing negative momentum metrics and the dominance of negative trends across most sectors, the market appears to be in a **bear market phase** or potentially in the early stages of a transitional phase. The widespread selling pressure and weak momentum scores suggest a lack of investor confidence, indicative of a downturn or correction phase.\n\n### Risk Environment:\nThe current environment is decidedly **Risk-Off**. Sector rotation data reveals strong performance in the Energy sector, which is traditionally considered less sensitive to market cycles and more of a safe haven during economic uncertainty. Meanwhile, cyclical sectors such as Technology, Consumer Discretionary, and Financials are under significant selling pressure, reinforcing the Risk-Off sentiment.\n\n### Sector Rotation Pattern:\nThe current sector rotation suggests a defensive posture among investors. The relative strength in Energy and Utilities, despite broad market weakness, points to a preference for sectors with stable cash flows and less economic sensitivity. The poor performance of cyclical sectors indicates expectations of economic slowdown or heightened volatility.\n\n### Cyclical vs Defensive Analysis:\n- **Cyclical Sectors**: Technology, Financials, Consumer Discretionary, and Industrials are all showing negative momentum scores and strong sell trends. This signifies that investors are moving away from economically sensitive sectors, expecting reduced growth prospects or increased market volatility.\n  \n- **Defensive Sectors**: Utilities and Consumer Staples, while not performing exceptionally, are faring better relative to the market. Utilities show a minor positive momentum score and a buying trend, indicating some investor interest in safety and stability.\n\n### Key Insights:\n1. **Energy Sector Opportunity**: With strong momentum and a positive trend, Energy (XLE) is a potential area for investment as it outperforms amid broader market weakness.\n   \n2. **Defensive Positioning**: Consider increasing exposure to defensive sectors like Utilities (XLU) and Consumer Staples (XLP) to mitigate risk and provide stability in portfolios.\n\n3. **Avoid Cyclical Exposure**: Reduce or avoid exposure to cyclical sectors, particularly Financials (XLF) and Industrials (XLI), which are experiencing strong sell-offs.\n\n4. **Monitor Volume Trends**: Sectors with increasing volume trends, especially in Communication Services (XLC) and Industrials (XLI), indicate heightened interest and potential volatility. This could signal upcoming shifts or opportunities for tactical plays.\n\n5. **Watch for Sector Stability**: Keep an eye on Utilities (XLU) as its buying trend might stabilize portfolios against further market declines.\n\n### Market Outlook:\n- **Short-term (1-2 weeks)**: Continued volatility with a bearish tilt as investors seek safety and reduce exposure to riskier assets. Expect further consolidation in defensive sectors.\n  \n- **Medium-term (1-3 months)**: Potential stabilization if defensive sectors gain further traction and macroeconomic conditions provide clearer signals. Energy might continue to lead if geopolitical or supply concerns persist.\n\n### Risk Factors:\n1. **Economic Data Releases**: Any negative surprises in economic indicators (e.g., GDP, employment data) could exacerbate market sell-offs.\n   \n2. **Geopolitical Risks**: Ongoing geopolitical tensions or new developments could increase market volatility and further impact cyclical sectors.\n\n3. **Interest Rate Changes**: Central bank policy shifts, especially unexpected rate increases, could further pressure financial and industrial sectors.\n\n4. **Inflation Concerns**: Persistent or worsening inflation could lead to reduced consumer spending, impacting Consumer Discretionary and other economically sensitive sectors.\n\nIn conclusion, given the current data, investors should adopt a cautious stance, prioritizing sectors with more resilience to economic fluctuations while staying vigilant for changes in market conditions that could alter the current dynamics."
 }
