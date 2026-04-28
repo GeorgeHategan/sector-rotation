@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-27T22:47:55.853470+02:00",
+  "timestamp": "2026-04-28T17:01:05.566294+02:00",
   "sectors": [
     {
       "Sector": "Technology",
@@ -7,7 +7,7 @@
       "1D_Change_%": 0.22,
       "5D_Change_%": 3.8,
       "20D_Change_%": 25.94,
-      "Volume_Trend_%": -1.27,
+      "Volume_Trend_%": -1.24,
       "RS_vs_SMA20_%": 9.75,
       "Momentum_Score": 6.44,
       "Trend": "\ud83d\udcc8 BUYING",
@@ -16,14 +16,14 @@
     {
       "Sector": "Regional Banking",
       "Ticker": "KRE",
-      "1D_Change_%": 1.67,
-      "5D_Change_%": 0.59,
-      "20D_Change_%": 10.11,
+      "1D_Change_%": 1.71,
+      "5D_Change_%": 0.63,
+      "20D_Change_%": 10.16,
       "Volume_Trend_%": 2.1,
-      "RS_vs_SMA20_%": 2.47,
-      "Momentum_Score": 3.03,
+      "RS_vs_SMA20_%": 2.52,
+      "Momentum_Score": 3.08,
       "Trend": "\ud83d\ude80 STRONG BUY",
-      "Current_Price": 70.04
+      "Current_Price": 70.07
     },
     {
       "Sector": "Industrials",
@@ -31,59 +31,59 @@
       "1D_Change_%": 0.02,
       "5D_Change_%": 0.62,
       "20D_Change_%": 10.15,
-      "Volume_Trend_%": -5.05,
+      "Volume_Trend_%": -5.01,
       "RS_vs_SMA20_%": 1.89,
-      "Momentum_Score": 2.22,
+      "Momentum_Score": 2.23,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 172.5
+      "Current_Price": 172.51
     },
     {
       "Sector": "Consumer Discretionary",
       "Ticker": "XLY",
-      "1D_Change_%": -0.71,
-      "5D_Change_%": -0.94,
-      "20D_Change_%": 11.54,
+      "1D_Change_%": -0.72,
+      "5D_Change_%": -0.95,
+      "20D_Change_%": 11.53,
       "Volume_Trend_%": -24.45,
       "RS_vs_SMA20_%": 3.17,
-      "Momentum_Score": 1.67,
+      "Momentum_Score": 1.66,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 117.85
+      "Current_Price": 117.84
     },
     {
       "Sector": "Financials",
       "Ticker": "XLF",
-      "1D_Change_%": 0.74,
-      "5D_Change_%": -0.96,
-      "20D_Change_%": 7.11,
-      "Volume_Trend_%": -16.46,
-      "RS_vs_SMA20_%": 1.37,
-      "Momentum_Score": 1.51,
+      "1D_Change_%": 0.76,
+      "5D_Change_%": -0.94,
+      "20D_Change_%": 7.13,
+      "Volume_Trend_%": -16.3,
+      "RS_vs_SMA20_%": 1.39,
+      "Momentum_Score": 1.52,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 51.8
+      "Current_Price": 51.81
     },
     {
       "Sector": "Communication Services",
       "Ticker": "XLC",
       "1D_Change_%": 0.23,
-      "5D_Change_%": -1.16,
-      "20D_Change_%": 7.26,
-      "Volume_Trend_%": -21.06,
+      "5D_Change_%": -1.15,
+      "20D_Change_%": 7.27,
+      "Volume_Trend_%": -20.98,
       "RS_vs_SMA20_%": 0.85,
-      "Momentum_Score": 1.22,
+      "Momentum_Score": 1.23,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 115.8
+      "Current_Price": 115.81
     },
     {
       "Sector": "Real Estate",
       "Ticker": "XLRE",
-      "1D_Change_%": -0.8,
-      "5D_Change_%": -0.69,
-      "20D_Change_%": 8.13,
-      "Volume_Trend_%": -24.93,
-      "RS_vs_SMA20_%": 1.54,
-      "Momentum_Score": 1.02,
+      "1D_Change_%": -0.78,
+      "5D_Change_%": -0.66,
+      "20D_Change_%": 8.16,
+      "Volume_Trend_%": -24.92,
+      "RS_vs_SMA20_%": 1.57,
+      "Momentum_Score": 1.04,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 43.48
+      "Current_Price": 43.49
     },
     {
       "Sector": "Materials",
@@ -100,14 +100,14 @@
     {
       "Sector": "Utilities",
       "Ticker": "XLU",
-      "1D_Change_%": 0.0,
-      "5D_Change_%": 2.74,
-      "20D_Change_%": 0.57,
-      "Volume_Trend_%": -4.29,
-      "RS_vs_SMA20_%": 0.07,
-      "Momentum_Score": 0.93,
+      "1D_Change_%": 0.02,
+      "5D_Change_%": 2.76,
+      "20D_Change_%": 0.59,
+      "Volume_Trend_%": -4.27,
+      "RS_vs_SMA20_%": 0.09,
+      "Momentum_Score": 0.96,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 46.18
+      "Current_Price": 46.19
     },
     {
       "Sector": "Biotechnology",
@@ -124,14 +124,14 @@
     {
       "Sector": "Consumer Staples",
       "Ticker": "XLP",
-      "1D_Change_%": -1.08,
-      "5D_Change_%": 0.6,
-      "20D_Change_%": 0.55,
-      "Volume_Trend_%": -21.24,
-      "RS_vs_SMA20_%": 0.21,
-      "Momentum_Score": -0.25,
+      "1D_Change_%": -1.07,
+      "5D_Change_%": 0.61,
+      "20D_Change_%": 0.56,
+      "Volume_Trend_%": -21.21,
+      "RS_vs_SMA20_%": 0.23,
+      "Momentum_Score": -0.24,
       "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 82.33
+      "Current_Price": 82.34
     },
     {
       "Sector": "Healthcare",
@@ -139,7 +139,7 @@
       "1D_Change_%": -0.5,
       "5D_Change_%": -1.69,
       "20D_Change_%": -0.25,
-      "Volume_Trend_%": -14.08,
+      "Volume_Trend_%": -14.05,
       "RS_vs_SMA20_%": -2.33,
       "Momentum_Score": -0.81,
       "Trend": "\ud83d\udcc9 SELLING",
@@ -148,17 +148,17 @@
     {
       "Sector": "Energy",
       "Ticker": "XLE",
-      "1D_Change_%": -0.14,
-      "5D_Change_%": 1.65,
-      "20D_Change_%": -8.34,
-      "Volume_Trend_%": -28.23,
-      "RS_vs_SMA20_%": -1.42,
-      "Momentum_Score": -1.25,
+      "1D_Change_%": -0.18,
+      "5D_Change_%": 1.61,
+      "20D_Change_%": -8.38,
+      "Volume_Trend_%": -28.19,
+      "RS_vs_SMA20_%": -1.45,
+      "Momentum_Score": -1.28,
       "Trend": "\ud83d\udcc9 SELLING",
-      "Current_Price": 56.79
+      "Current_Price": 56.77
     }
   ],
-  "chart_file": "sector_rotation_chart_20260427_204740.png",
-  "heatmap_file": "sector_heatmap_20260427_204740.png",
-  "ai_analysis": "Analysis Generated: April 27, 2026 at 20:47:55 CET\n\n### 1. Market Phase Assessment\nBased on the sector rotation data, the market appears to be in a transitional phase, leaning towards a bull market. The strong performance of cyclical sectors like Technology, Regional Banking, and Industrials indicates optimism and economic expansion. However, the weakness in defensive sectors like Healthcare and Consumer Staples, alongside Energy, suggests some degree of caution.\n\n### 2. Risk Environment\nThe current environment is slightly Risk-On. The outperformance of cyclical sectors over defensive ones suggests that investors are willing to take on more risk, likely due to positive economic indicators or expectations of growth. The Technology sector's significant gains highlight this stance, with investors favoring growth over stability.\n\n### 3. Sector Rotation Pattern\nThe current rotation pattern indicates that market participants expect continued economic recovery and growth. The strong performance of Technology and Regional Banking suggests confidence in consumer spending and financial stability. The lag in defensive sectors such as Healthcare and Consumer Staples indicates a shift away from safety towards growth potential.\n\n### 4. Cyclical vs Defensive\n- **Cyclical Sectors**: Technology (XLK) has shown strong momentum and relative strength, supported by a positive volume trend and a high RS vs. SMA20%. Regional Banking (KRE) also displays a strong buying trend, indicating robust financial sector dynamics. Industrials (XLI) show modest gains but are still in a buying phase.\n  \n- **Defensive Sectors**: Utilities (XLU) and Consumer Staples (XLP) are underperforming, with low momentum scores and neutral trends. Healthcare (XLV) is notably weak, indicating a lack of investor interest in defensive plays.\n\n### 5. Key Insights\n1. **Emphasize Growth Sectors**: Investors should consider increasing exposure to strong-performing cyclical sectors like Technology and Regional Banking, which are showing robust trends and momentum.\n   \n2. **Caution in Defensive Sectors**: Defensive sectors are underperforming, suggesting that these might not provide the desired risk mitigation in the short term. Investors should be selective in these areas.\n\n3. **Monitor Volume Trends**: Despite positive price movements, some sectors like Consumer Discretionary and Real Estate show negative volume trends, which could indicate underlying weakness or lack of conviction.\n\n4. **Regional Banking Opportunities**: The strong buy signal in the Regional Banking sector suggests opportunities for gains as financial conditions improve.\n\n5. **Stay Informed on Economic Indicators**: Given the transitional market phase, staying updated on macroeconomic indicators will be crucial in adjusting sector allocations.\n\n### 6. Market Outlook\n- **Short-term (1-2 weeks)**: Expect continued strength in Technology and Regional Banking as investors position for growth. Market volatility may increase as defensive sectors attempt to stabilize.\n  \n- **Medium-term (1-3 months)**: The market is likely to sustain its upward trajectory if economic data supports growth. Cyclicals should continue to outperform, but any shifts in economic policy or global events could alter this outlook.\n\n### 7. Risk Factors\n- **Economic Data Dependency**: Any negative surprises in economic data could quickly shift the market sentiment from Risk-On to Risk-Off.\n  \n- **Geopolitical Tensions**: Escalating geopolitical tensions could impact global trade and investor confidence, leading to increased market volatility.\n  \n- **Interest Rate Changes**: Sudden changes in interest rate expectations could affect financials and technology valuations, influencing overall market performance.\n\nOverall, while the market leans towards growth and optimism, investors should remain vigilant of external factors that could impact this trajectory."
+  "chart_file": "sector_rotation_chart_20260428_150044.png",
+  "heatmap_file": "sector_heatmap_20260428_150044.png",
+  "ai_analysis": "Analysis Generated: April 28, 2026 at 15:01:05 CET\n\n### Market Analysis:\n\n#### 1. **Market Phase Assessment:**\nBased on the provided sector rotation data, the market appears to be in a **transitional phase** moving towards a bullish sentiment. This is driven by strong performance in Technology, Regional Banking, and Industrials, all of which have shown significant gains over the past 20 days. However, the presence of weakness in traditional defensive sectors like Consumer Staples and Healthcare, alongside Energy, suggests that the market is not fully in a bull phase yet.\n\n#### 2. **Risk Environment:**\nThe current environment leans towards **Risk-On**, as evidenced by the strong movements in cyclical sectors such as Technology and Regional Banking. The outperformance of these sectors indicates increased investor confidence and a preference for growth-oriented investments.\n\n#### 3. **Sector Rotation Pattern:**\nThe rotation pattern suggests a shift towards cyclical and growth sectors, indicating expectations of economic recovery or expansion. Technology is leading the charge, supported by Regional Banking and Industrials. The relatively weaker performance of defensive sectors implies a reduced focus on risk aversion.\n\n#### 4. **Cyclical vs Defensive Analysis:**\n- **Cyclical Sectors:**\n  - **Technology (XLK):** Strong momentum and trend, indicating continued interest and investment.\n  - **Industrials (XLI):** Positive trend and moderate momentum, suggesting steady performance.\n  - **Financials (XLF):** Despite recent volatility, the sector is still in a buying trend.\n  - **Consumer Discretionary (XLY):** Despite some short-term setbacks, the sector shows overall positive performance over 20 days.\n\n- **Defensive Sectors:**\n  - **Utilities (XLU):** Minimal gains, indicating limited investor interest.\n  - **Consumer Staples (XLP) and Healthcare (XLV):** Both show neutral to selling trends, highlighting decreased focus on defensive positioning.\n\n#### 5. **Key Insights:**\n1. **Technology and Regional Banking are leading sectors**: Investors should consider increasing exposure to these areas to capitalize on current trends.\n2. **Monitor volume trends carefully**: The declining volume trends in several sectors suggest potential volatility or impending reversals; caution is advised.\n3. **Watch for potential shifts in Energy and Healthcare**: As both sectors are currently weak, any signs of reversal could present opportunities.\n4. **Consider cyclical over defensive**: Given the market's current risk-on stance, cyclical sectors may offer better returns in the short to medium term.\n5. **Prepare for increased volatility**: As transitions occur, sectors with high momentum scores, like Technology, could see swift changes.\n\n#### 6. **Market Outlook:**\n- **Short-term (1-2 weeks):** Expect continued strength in Technology and Regional Banking, with potential volatility in Industrials and Financials as investors reassess risks.\n- **Medium-term (1-3 months):** Likely to see sustained growth in cyclical sectors, provided economic indicators remain favorable. Keep an eye on potential rotations back to defensive sectors if macroeconomic conditions deteriorate.\n\n#### 7. **Risk Factors:**\n- **Economic Data Surprises:** Unfavorable economic reports could shift sentiment quickly.\n- **Geopolitical Tensions:** Any escalation could prompt a shift back to defensive assets.\n- **Interest Rate Changes:** Unexpected changes by central banks could impact sector performance, particularly Financials and Real Estate.\n- **Volume and Volatility:** Continued negative volume trends could indicate underlying market instability.\n\nIn conclusion, while the market is showing signs of transitioning to a bullish phase, it is crucial for investors to remain vigilant and adapt strategies based on evolving market conditions and sector trends."
 }
