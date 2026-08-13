@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-08-12T23:11:19.584547+02:00",
+  "timestamp": "2026-08-13T17:04:06.017016+02:00",
   "sectors": [
     {
       "Sector": "Energy",
       "Ticker": "XLE",
-      "1D_Change_%": 0.15,
-      "5D_Change_%": 4.92,
-      "20D_Change_%": 7.02,
-      "Volume_Trend_%": -12.44,
-      "RS_vs_SMA20_%": 3.88,
-      "Momentum_Score": 2.95,
+      "1D_Change_%": 0.16,
+      "5D_Change_%": 4.93,
+      "20D_Change_%": 7.03,
+      "Volume_Trend_%": -12.43,
+      "RS_vs_SMA20_%": 3.89,
+      "Momentum_Score": 2.97,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 61.02
+      "Current_Price": 61.03
     },
     {
       "Sector": "Biotechnology",
@@ -31,7 +31,7 @@
       "1D_Change_%": 1.49,
       "5D_Change_%": 1.9,
       "20D_Change_%": 6.39,
-      "Volume_Trend_%": -28.61,
+      "Volume_Trend_%": -28.6,
       "RS_vs_SMA20_%": 5.14,
       "Momentum_Score": 2.59,
       "Trend": "\ud83d\udcc8 BUYING",
@@ -40,26 +40,26 @@
     {
       "Sector": "Healthcare",
       "Ticker": "XLV",
-      "1D_Change_%": 0.25,
-      "5D_Change_%": 2.42,
+      "1D_Change_%": 0.26,
+      "5D_Change_%": 2.43,
       "20D_Change_%": 4.1,
       "Volume_Trend_%": -18.7,
-      "RS_vs_SMA20_%": 2.94,
-      "Momentum_Score": 1.67,
+      "RS_vs_SMA20_%": 2.95,
+      "Momentum_Score": 1.68,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 168.43
+      "Current_Price": 168.44
     },
     {
       "Sector": "Industrials",
       "Ticker": "XLI",
       "1D_Change_%": 0.1,
       "5D_Change_%": 0.61,
-      "20D_Change_%": 3.19,
+      "20D_Change_%": 3.18,
       "Volume_Trend_%": -25.04,
-      "RS_vs_SMA20_%": 2.07,
+      "RS_vs_SMA20_%": 2.06,
       "Momentum_Score": 0.87,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 185.89
+      "Current_Price": 185.88
     },
     {
       "Sector": "Regional Banking",
@@ -67,7 +67,7 @@
       "1D_Change_%": 0.74,
       "5D_Change_%": 1.16,
       "20D_Change_%": -0.69,
-      "Volume_Trend_%": -21.31,
+      "Volume_Trend_%": -21.3,
       "RS_vs_SMA20_%": 1.24,
       "Momentum_Score": 0.58,
       "Trend": "\ud83d\udcc8 BUYING",
@@ -76,26 +76,26 @@
     {
       "Sector": "Financials",
       "Ticker": "XLF",
-      "1D_Change_%": 0.19,
-      "5D_Change_%": 0.17,
-      "20D_Change_%": 2.04,
-      "Volume_Trend_%": -25.46,
-      "RS_vs_SMA20_%": 1.54,
-      "Momentum_Score": 0.56,
+      "1D_Change_%": 0.21,
+      "5D_Change_%": 0.19,
+      "20D_Change_%": 2.06,
+      "Volume_Trend_%": -25.4,
+      "RS_vs_SMA20_%": 1.56,
+      "Momentum_Score": 0.57,
       "Trend": "\ud83d\udcc8 BUYING",
-      "Current_Price": 57.91
+      "Current_Price": 57.92
     },
     {
       "Sector": "Materials",
       "Ticker": "XLB",
-      "1D_Change_%": -1.22,
-      "5D_Change_%": 0.81,
-      "20D_Change_%": 3.34,
+      "1D_Change_%": -1.24,
+      "5D_Change_%": 0.79,
+      "20D_Change_%": 3.32,
       "Volume_Trend_%": -3.06,
-      "RS_vs_SMA20_%": 2.0,
-      "Momentum_Score": 0.3,
+      "RS_vs_SMA20_%": 1.98,
+      "Momentum_Score": 0.28,
       "Trend": "\u27a1\ufe0f  NEUTRAL",
-      "Current_Price": 52.59
+      "Current_Price": 52.58
     },
     {
       "Sector": "Consumer Staples",
@@ -103,7 +103,7 @@
       "1D_Change_%": 0.46,
       "5D_Change_%": -0.04,
       "20D_Change_%": -0.85,
-      "Volume_Trend_%": -35.77,
+      "Volume_Trend_%": -35.75,
       "RS_vs_SMA20_%": -0.05,
       "Momentum_Score": 0.05,
       "Trend": "\u27a1\ufe0f  NEUTRAL",
@@ -112,12 +112,12 @@
     {
       "Sector": "Utilities",
       "Ticker": "XLU",
-      "1D_Change_%": 0.49,
-      "5D_Change_%": 1.07,
-      "20D_Change_%": -3.57,
+      "1D_Change_%": 0.48,
+      "5D_Change_%": 1.06,
+      "20D_Change_%": -3.58,
       "Volume_Trend_%": 5.54,
-      "RS_vs_SMA20_%": -1.89,
-      "Momentum_Score": -0.15,
+      "RS_vs_SMA20_%": -1.9,
+      "Momentum_Score": -0.16,
       "Trend": "\u27a1\ufe0f  NEUTRAL",
       "Current_Price": 43.84
     },
@@ -136,29 +136,29 @@
     {
       "Sector": "Consumer Discretionary",
       "Ticker": "XLY",
-      "1D_Change_%": -1.15,
-      "5D_Change_%": -0.19,
-      "20D_Change_%": 0.45,
-      "Volume_Trend_%": -39.52,
-      "RS_vs_SMA20_%": 2.15,
-      "Momentum_Score": -0.54,
+      "1D_Change_%": -1.13,
+      "5D_Change_%": -0.18,
+      "20D_Change_%": 0.47,
+      "Volume_Trend_%": -39.5,
+      "RS_vs_SMA20_%": 2.17,
+      "Momentum_Score": -0.53,
       "Trend": "\ud83d\udcc9 SELLING",
-      "Current_Price": 117.87
+      "Current_Price": 117.89
     },
     {
       "Sector": "Communication Services",
       "Ticker": "XLC",
-      "1D_Change_%": -0.87,
-      "5D_Change_%": -0.79,
-      "20D_Change_%": -2.09,
+      "1D_Change_%": -0.9,
+      "5D_Change_%": -0.82,
+      "20D_Change_%": -2.11,
       "Volume_Trend_%": -31.04,
-      "RS_vs_SMA20_%": 0.42,
-      "Momentum_Score": -1.09,
+      "RS_vs_SMA20_%": 0.4,
+      "Momentum_Score": -1.12,
       "Trend": "\ud83d\udcc9 SELLING",
-      "Current_Price": 110.3
+      "Current_Price": 110.27
     }
   ],
-  "chart_file": "sector_rotation_chart_20260812_211105.png",
-  "heatmap_file": "sector_heatmap_20260812_211105.png",
-  "ai_analysis": "Analysis Generated: August 12, 2026 at 21:11:19 CET\n\n### Market Phase Assessment\n\nBased on the provided sector rotation data, we appear to be in a transitional phase with a slight bullish tilt. The strong performance in sectors like Energy, Biotechnology, and Technology suggests that there is optimism in certain areas of the market, indicating a selective bull market. However, the weakness in defensive sectors and the negative momentum in Consumer Discretionary and Communication Services suggest underlying caution and volatility, characteristic of a market in transition rather than a full-fledged bull market.\n\n### Risk Environment\n\nThe current environment leans towards a **Risk-On** environment, as evidenced by the strong performance in cyclically-sensitive sectors like Energy and Technology. This risk appetite is further supported by the momentum scores and buying trends in these sectors. However, the negative performance in Consumer Discretionary and Communication Services indicates that risk is not uniformly embraced across all sectors, suggesting a selective risk-on environment.\n\n### Sector Rotation Pattern\n\nThe current rotation pattern shows investors favoring sectors with strong growth prospects (Energy, Biotechnology, Technology) over more defensive or interest-sensitive sectors (Utilities, Consumer Staples). This rotation pattern indicates market expectations for economic recovery or growth, with investors positioning themselves in sectors expected to outperform in such scenarios.\n\n### Cyclical vs Defensive\n\n- **Cyclical Sectors**: Technology, Industrials, and Financials show positive trends, albeit with varying momentum scores. Technology is particularly strong, driven by innovation and digital transformation trends. However, Consumer Discretionary is underperforming, reflecting consumer spending concerns or profit-taking after previous gains.\n\n- **Defensive Sectors**: Utilities and Consumer Staples are showing neutral to negative trends, indicating they are not currently in favor as investors are not seeking the safety typically offered by these sectors. Healthcare shows moderate buying interest, suggesting some defensive positioning but not overwhelming.\n\n### Key Insights\n\n1. **Focus on Growth Sectors**: Investors should consider increasing exposure to sectors like Biotechnology and Technology, which are showing strong momentum and buying trends.\n\n2. **Energy Sector Potential**: The Energy sector's continued strength suggests a favorable outlook possibly tied to commodity price increases or geopolitical factors, making it a potential opportunity for gains.\n\n3. **Cautious on Defensive Sectors**: Defensive sectors like Utilities and Consumer Staples are not currently favored, indicating that capital may be better allocated to growth opportunities.\n\n4. **Consumer Discretionary Concerns**: With negative trends and momentum, it's prudent to be cautious with Consumer Discretionary investments until clearer signals of consumer confidence emerge.\n\n5. **Monitor Communication Services**: Given its weak performance, there may be short-term volatility; however, any stabilization could present buying opportunities for long-term investors.\n\n### Market Outlook\n\n- **Short-term (1-2 weeks)**: Expect continued volatility with selective strength in growth sectors. Potential for short-term pullbacks in weaker sectors like Consumer Discretionary and Communication Services.\n\n- **Medium-term (1-3 months)**: Anticipate continued rotation into growth-oriented sectors as economic conditions improve or stabilize, with the potential for defensive sectors to gain traction if macroeconomic conditions worsen.\n\n### Risk Factors\n\n1. **Economic Data Uncertainty**: Unexpected economic data, such as inflation or employment figures, could impact market sentiment.\n\n2. **Geopolitical Tensions**: Any escalation in geopolitical tensions could lead to market volatility, especially impacting Energy prices.\n\n3. **Interest Rate Changes**: Sudden changes in interest rate expectations could shift investor sentiment, particularly affecting Financials and interest-sensitive sectors.\n\n4. **Consumer Sentiment**: Changes in consumer confidence could heavily impact Consumer Discretionary and broader market sentiment.\n\nBy closely monitoring these factors and sector performance, traders and investors can make informed decisions aligned with current market dynamics."
+  "chart_file": "sector_rotation_chart_20260813_150346.png",
+  "heatmap_file": "sector_heatmap_20260813_150346.png",
+  "ai_analysis": "Analysis Generated: August 13, 2026 at 15:04:05 CET\n\n### 1. Market Phase Assessment:\nBased on the data provided, the market appears to be in a **transitional phase**. Several sectors like Energy, Biotechnology, and Technology are exhibiting strong performance, indicative of bullish sentiment, while sectors such as Communication Services and Consumer Discretionary are struggling, showing signs of bearish pressure. This mixed performance across sectors suggests a market undergoing consolidation or transitioning from a bearish phase to a more bullish outlook, or vice versa.\n\n### 2. Risk Environment:\nThe current environment appears to be **Risk-On**. Strong performance in cyclical sectors like Energy, Biotechnology, and Technology, combined with the overall positive average market momentum of 0.79, suggests investors are willing to take on more risk. However, the mixed signals from other sectors indicate some caution is still present.\n\n### 3. Sector Rotation Pattern:\nThe sector rotation pattern indicates a shift from defensive to cyclical sectors, which often precedes or coincides with economic recovery expectations. Energy, Biotechnology, and Technology are leading, suggesting optimism about economic growth and innovation. On the other hand, weakness in sectors like Communication Services and Consumer Discretionary points to selective risk-taking and potential concerns over consumer spending and communication sector growth.\n\n### 4. Cyclical vs Defensive Analysis:\n- **Cyclical Sectors**: Technology (XLK) shows robust short-term momentum, and Energy (XLE) is benefiting from positive price trends, suggesting growth expectations. Financials (XLF) and Industrials (XLI) are showing moderate gains, but their momentum scores and volume trends highlight cautious optimism.\n- **Defensive Sectors**: Utilities (XLU), Consumer Staples (XLP), and Healthcare (XLV) are generally neutral, with minimal momentum and mixed volume trends. This indicates that while investors are not heavily favoring these sectors, they aren't abandoning them either, reflecting cautious positioning.\n\n### 5. Key Insights:\n1. **Energy and Biotechnology** are strong sectors poised for potential gains, driven by positive momentum and relative strength.\n2. **Technology** continues to show resilience, making it an attractive sector for growth-focused investors.\n3. **Communication Services and Consumer Discretionary** face headwinds, indicating potential risks in consumer-driven segments.\n4. **Volume Trends** highlight reduced activity in many sectors, suggesting a potential pause or consolidation phase in the broader market.\n5. **Defensive sectors** are not currently favored, but they may offer stability if the market faces further economic challenges.\n\n### 6. Market Outlook:\n- **Short-term (1-2 weeks)**: Expect continued strength in the leading sectors (Energy, Biotechnology, Technology), with potential volatility as the market digests mixed signals from weaker sectors.\n- **Medium-term (1-3 months)**: The market could gradually shift towards a more bullish phase if economic data supports growth, particularly benefiting cyclical sectors. However, ongoing caution is warranted due to mixed sector performances.\n\n### 7. Risk Factors:\n- **Economic Data**: Upcoming economic reports could sway market sentiment significantly, especially if they contradict current growth expectations.\n- **Interest Rates**: Changes in interest rate policies could impact consumer spending and borrowing costs, affecting sectors like Consumer Discretionary and Financials.\n- **Geopolitical Tensions**: Any escalation in geopolitical issues could lead to risk-off behavior, impacting market sentiment broadly.\n- **Earnings Reports**: Company earnings, particularly in Technology and Consumer sectors, will be crucial in validating growth expectations.\n\nIn summary, while the market exhibits signs of transitioning towards a more positive outlook, investors should remain vigilant of economic indicators and sector-specific developments. Balancing exposure to strong sectors with cautious monitoring of weaker areas will be crucial in navigating the current environment."
 }
