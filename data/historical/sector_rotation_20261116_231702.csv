@@ -1,0 +1,14 @@
+Sector,Ticker,1D_Change_%,5D_Change_%,20D_Change_%,Volume_Trend_%,RS_vs_SMA20_%,Momentum_Score,Trend,Current_Price
+Healthcare,XLV,0.54,0.28,7.51,-26.14,2.83,1.86,📈 BUYING,188.85
+Consumer Staples,XLP,0.3,1.76,5.56,-17.24,3.2,1.79,📈 BUYING,92.63
+Utilities,XLU,0.2,0.91,5.37,-33.72,2.13,1.45,📈 BUYING,44.13
+Regional Banking,KRE,0.3,-0.97,5.02,-25.25,0.49,0.87,📈 BUYING,72.74
+Real Estate,XLRE,-0.26,-0.73,4.42,-31.36,1.66,0.54,📈 BUYING,44.26
+Financials,XLF,-0.87,-0.21,4.4,-12.59,1.66,0.38,➡️  NEUTRAL,58.17
+Consumer Discretionary,XLY,-1.54,-2.41,2.28,-16.97,0.52,-1.04,📉 SELLING,118.13
+Materials,XLB,-1.42,-2.57,0.51,-26.24,-1.47,-1.38,📉 SELLING,51.49
+Energy,XLE,-1.91,2.43,-6.25,-26.66,-3.4,-1.48,📉 SELLING,63.72
+Industrials,XLI,-1.82,-1.8,-0.66,-22.34,-1.24,-1.58,📉 SELLING,165.7
+Communication Services,XLC,-1.71,-0.86,-3.05,-29.45,1.44,-1.72,📉 SELLING,106.83
+Biotechnology,IBB,-2.13,-4.24,-1.2,0.35,-2.7,-2.57,🔻 STRONG SELL,207.98
+Technology,XLK,-3.27,-2.49,-11.18,-7.7,-7.25,-4.62,📉 SELLING,164.71
